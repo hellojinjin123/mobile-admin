@@ -28,5 +28,5 @@
 
 # 项目效果图
 
-![avatar](https://github.com/hellojinjin123/mobile-admin/blob/main/Public/show/haojjmobile.gif)
-![avatar](https://github.com/hellojinjin123/mobile-admin/blob/main/Public/show/haojjpc.gif)
+![avatar](https://raw.githubusercontent.com/hellojinjin123/mobile-admin/main/Public/show/haojjmobile.gif)
+![avatar](https://raw.githubusercontent.com/hellojinjin123/mobile-admin/main/Public/show/haojjpc.gif)

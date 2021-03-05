@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>分类管理</title>
+<link rel="stylesheet" type="text/css" href="__ADMIN__/Public/css/base.css" />
+<script src="__ADMIN__/Public/js/jquery-1.7.1.min.js"></script>
+<script src="__ADMIN__/Public/js/base.js"></script>
+
+<script>
+function Data(){
+	this._APP_ = "__APP__";
+	this.c_root = "<?php echo $c_root; ?>";
+	this.get_cid = "<?php echo $_GET['cid']; ?>"
+	this.actionName = "Category";
+}
+</script>
+<script src="__ADMIN__/Public/js/index.js"></script>
+
+</head>
+<body>
+<div class="nav-site">{~getNavSite($c_root,$_GET['cid'])}</div>
+<form action="" method="post" id="form_list">
+<input type="hidden" name="cid" value="{.cid}" />
+<table class="grid-function" border="0" cellpadding="0" cellspacing="0">
+	<thead>
+		<tr>
+			<th width="600">
+				<div class="qw-fl grid-add-data" style="display:none;">
+					<input type="button" value="添加{$titleText}" onclick="goToUrl('__APP__/Admin/Category/edit/lang/{~getAddButtonLang($_GET[\'lang\'],$lang)}/pid/<?php echo $c_root; ?>/cid/{.cid}');" class="button-img-add" />
+				</div>
+				<div class="qw-fl grid-batch-operate">
+					<a href="#" id="on_ordernum" title="数字排序"><img src="__ADMIN__/Public/imgs/sort.png" align="top" /></a>&nbsp;&nbsp;
+					<a href="#" id="on_move" title="移动数据"><img src="__ADMIN__/Public/imgs/move.png" align="top" /></a>&nbsp;&nbsp;
+				</div>
+				<div class="qw-fr">
+				</div>
+			</th>
+		</tr>
+	</thead>
+	<!-- 移动和复制操作分类选择 -->
+	<tbody id="category_box" style="display:none;">
+		<tr>
+			<td align="center">选择分类
+				<select id="one_category_id" name="one_category_id" style="width:200px;" onchange="changeCategory(this,'two_category_id')">
+	              <option value="" selected="">请选择</option>
+	            </select>
+	            <select id="two_category_id" name="two_category_id" style="width:200px;" onchange="changeCategory(this,'three_category_id')">
+	              <option value="" selected="">请选择</option>
+	            </select>
+	            <select id="three_category_id" name="three_category_id" style="width:200px;" onchange="changeCategory(this,'')">
+	              <option value="" selected="">请选择</option>
+	            </select>
+	            <input type="submit" value="" class="button button-green" id="category_button" />
+			</td>
+		</tr>
+	</tbody>
+</table>
+<table class="grid-table" border="1" cellpadding="0" cellspacing="0"> 
+	<thead> 
+		<tr>
+			<th width="15"><input type="checkbox" id="chk_all"></th>
+		    <th>分类名称</th>
+		    <th width="35">数量</th>
+		    <th width="35">排序</th>
+		    <th width="25">发布</th>
+			<th width="25">手机</th>
+		    <th width="180">操作</th>
+		</tr> 
+	</thead> 
+	<tbody><?php $num = 0; ?>
+		<volist name="categoryList" id="vo">
+			<?php $num++;?>
+			<tr>
+		      <td><input type="checkbox" name="ids[]" id="ids{$vo.id}" value="{$num},{$vo.id}"></td>
+		      <td>{~getLangText($vo['lang'])}&nbsp;<strong>{$vo.title}</strong></td>
+		      <td>{$vo.list_count}</td>
+		      <td><input style="width:35px" name="ordernums[]" id="ordernum{$vo.id}" value="{$vo.ordernum}"></td>
+		      <td align="center">{~getCheckboxState($vo['id'],'is_publish',$vo['is_publish'])}</td>
+			  <td align="center">{~getSynchMobileButton($custom,$vo)}</td>
+		      <td align="right">[<a href="__APP__/Admin/Category/edit/act/add/pid/{$c_root}/id/{$vo.id}/cid/{.cid}">添加子分类</a>] &nbsp; [<a href="__APP__/Admin/Category/edit/act/update/c_root/{$c_root}/id/{$vo.id}/cid/{.cid}">编辑</a>] &nbsp; <a href="#" onclick="deleteData('__APP__/Admin/Category/deleteCategory/id/{$vo.id}');" style="display:none;">[删除]</a> </td>
+		    </tr>
+		    <volist name="vo['_child']" id="child2">
+		    	<?php $num++;?>
+				<tr>
+			      <td><input type="checkbox" name="ids[]" id="ids{$child2.id}" value="{$num},{$child2.id}"></td>
+			      <td><strong><span style="color:#ddd">|--</strong></span>{~getLangText($child2['lang'])}&nbsp;{$child2.title}</td>
+			      <td>{$child2.list_count}</td>
+			      <td><input style="width:35px" name="ordernums[]" id="ordernum{$child2.id}" value="{$child2.ordernum}"></td>
+			      <td align="center">{~getCheckboxState($child2['id'],'is_publish',$child2['is_publish'])}</td>
+				  <td align="center">{~getSynchMobileButton($custom,$child2)}</td>
+			      <td align="right">
+                  <neq name="_GET['cid']" value="788">
+                  	[<a href="__APP__/Admin/Category/edit/act/add/pid/{$vo.id}/id/{$child2.id}/cid/{.cid}">添加子分类</a>] &nbsp; 
+                  </neq>
+                    [<a href="__APP__/Admin/Category/edit/act/update/c_root/{$c_root}/pid/{$vo.pid}/id/{$child2.id}/cid/{.cid}">编辑</a>] &nbsp; [<a href="#" onclick="deleteData('__APP__/Admin/Category/deleteCategory/id/{$child2.id}');">删除</a>] </td>
+			    </tr>
+			    <volist name="child2['_child']" id="child3">
+			    	<?php $num++;?>
+					<tr>
+				      <td><input type="checkbox" name="ids[]" id="ids{$child3.id}" value="{$num},{$child3.id}"></td>
+				      <td><strong><span style="color:#ddd">|--|--</strong></span>{~getLangText($child3['lang'])}&nbsp;{$child3.title}</td>
+				      <td>{$child3.list_count}</td>
+				      <td><input style="width:35px" name="ordernums[]" id="ordernum{$child3.id}" value="{$child3.ordernum}"></td>
+				      <td align="center">{~getCheckboxState($child3['id'],'is_publish',$child3['is_publish'])}</td>
+					  <td align="center">{~getSynchMobileButton($custom,$child3)}</td>
+				      <td align="right">[<a href="__APP__/Admin/Category/edit/act/update/c_root/{$c_root}/pid/{$child2.id}/id/{$child3.id}/cid/{.cid}">编辑</a>] &nbsp; [<a href="#" onclick="deleteData('__APP__/Admin/Category/deleteCategory/id/{$child3.id}');">删除</a>] </td>
+				    </tr>
+				</volist>
+			</volist>
+	    </volist>
+	</tbody>
+</table>
+</form>
+
+</body>
+</html>
+
+
+ 

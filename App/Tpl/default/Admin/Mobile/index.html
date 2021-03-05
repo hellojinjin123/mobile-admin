@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>手机模式设置</title>
+<link rel="stylesheet" type="text/css" href="__ADMIN__/Public/css/base.css" />
+<link rel="stylesheet" href="__ADMIN__/Public/js/wdTree/css/tree.css" />
+<script src="__ADMIN__/Public/js/jquery-1.7.1.min.js"></script>
+<script src="__ADMIN__/Public/js/wdTree/jquery.tree.js"></script>
+<script src="__ADMIN__/Public/js/base.js"></script>
+
+<style type="text/css">
+body{padding: 50px 0;}
+
+</style>
+
+</head>
+<body>
+
+	<div class="nav-site">云平台 > 手机模式 </div>
+
+    <div style="margin:0 auto;width:500px">
+        <div id="tree"></div>
+    </div>
+
+<script type="text/javascript">
+var userAgent = window.navigator.userAgent.toLowerCase();
+$.browser.msie8 = $.browser.msie && /msie 8\.0/i.test(userAgent);
+$.browser.msie7 = $.browser.msie && /msie 7\.0/i.test(userAgent);
+$.browser.msie6 = !$.browser.msie8 && !$.browser.msie7
+		&& $.browser.msie && /msie 6\.0/i.test(userAgent);
+function load() {
+	var o = {
+		cbiconpath : '__ADMIN__/Public/js/wdTree/css/images/icons/',
+		showcheck : true,
+		oncheckboxclick:function(tree,item,status){
+			$.getJSON('__APP__/Admin/Mobile/isMobile',{'checkstate':tree.checkstate,'id':tree.id},function(bool){
+				console.log(bool);
+			});
+		},          
+		url : "__APP__/Admin/Mobile/ajaxtree"
+	};
+	o.data = [ {
+		"id" : "12",
+		"text" : "手机显示模块",
+		"value" : "root",
+		"showcheck" : true,
+		"complete" : false,
+		"isexpand" : true,
+		"checkstate" : 1,
+		"hasChildren" : true
+	} ];
+	$("#tree").treeview(o);
+	$("#tree").reflash("12");
+}
+
+if ($.browser.msie6){
+	load();
+} else {
+	$(document).ready(load);
+}
+
+</script>
+
+
+</body>
+</html>
+
+
+

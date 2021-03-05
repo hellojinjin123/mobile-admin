@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>系统定制</title>
+        <link rel="stylesheet" type="text/css" href="__ADMIN__/Public/css/base.css" />
+        <link rel="stylesheet" type="text/css" href="__ADMIN__/Public/js/colortip/colortip-1.0-jquery.css" />
+        <script src="__ADMIN__/Public/js/jquery-1.7.1.min.js">
+        </script>
+        <script src="__ADMIN__/Public/js/jquery.lightbox_me.js">
+        </script>
+        <script src="__ADMIN__/Public/js/jquery.form.js">
+        </script>
+        <script src="__ADMIN__/Public/js/97Date/WdatePicker.js">
+        </script>
+        <script src="__ADMIN__/Public/js/colortip/colortip-1.0-jquery.js">
+        </script>
+        <style type="text/css">
+            em {
+                color: #999
+            }
+            
+            a {
+                color: blue;
+            }
+            
+            .form label.top {
+                vertical-align: top;
+            }
+            
+            .form span.span {
+                vertical-align: top;
+                display: inline-block;
+            }
+            
+            .tabs {
+                margin-bottom: -51px;
+                overflow: hidden;
+            }
+            
+            .tabs div {
+                float: left;
+                padding: 10px 20px;
+                margin-left: 40px;
+                border: 1px solid #DDD;
+                border-bottom: none;
+            }
+			#navList ol{
+				float:left;
+			}
+			#navList ol li{
+				float:left;
+				padding:0 7px;
+				border:1px #CCCCCC solid;
+				margin:0 7px 0 0;
+			}
+			#navList ol li a{
+				color:#555555;
+			}
+			#selectRadio{
+				margin: -24px 0 0 138px; 
+			}
+			#navList a{
+				padding:0 7px;
+				color:#555555;
+				border:1px #CCCCCC solid;
+				margin:7px;
+				line-height:25px;
+			}
+			#navList{
+				float:right;
+			}
+			#navList .null{
+				background:#ED6E6E;
+				color:#FFF;
+				border:1px #ED6E6E solid;
+			}
+        </style>
+    </head>
+    <body>
+        <h2>系统定制</h2>
+        <form method="post" action="__APP__/Admin/Custom/generateSystem" class="form">
+            <fieldset>
+                <ul class="align-list">
+                	<li>
+                        <label>
+                            重置数据
+                        </label>
+                        <input type="button" value="清除用户数据" style="padding:5px;" id="clearUserData">
+                    </li>
+                    <li>
+                        <label>
+                            多语言
+                        </label>
+                        {~langInput('checkbox')}<a href="#" onclick="openLangWin();">管理</a>
+                    </li>
+                    <li>
+                        <label>
+                            系统模块
+                        </label>
+                        <input type="checkbox" id="modules" name="modules" value="19">信息管理&nbsp;&nbsp;<input type="checkbox" id="modules" name="modules" value="20">产品管理&nbsp;&nbsp;<input type="checkbox" id="modules" name="modules" value="21">留言管理&nbsp;&nbsp;<input type="checkbox" id="modules" name="modules" value="22">网络营销&nbsp;&nbsp;<input type="checkbox" id="modules" name="modules" value="23">广告管理&nbsp;&nbsp;<input type="checkbox" id="modules" name="modules" value="24">友情连接&nbsp;&nbsp;
+                        <div style="margin-left: 140px;">
+                            <input type="checkbox" id="modules" name="modules" value="25">在线加盟&nbsp;&nbsp;<input type="checkbox" id="modules" name="modules" value="26">下载管理&nbsp;&nbsp;<input type="checkbox" id="modules" name="modules" value="27">招聘管理&nbsp;&nbsp;<input type="checkbox" id="modules" name="modules" value="28">在线调查&nbsp;&nbsp;<input type="checkbox" id="modules" name="modules" value="29">会员管理&nbsp;&nbsp;<input type="checkbox" id="modules" name="modules" value="535">营销推广&nbsp;&nbsp;
+                      <input type="checkbox" id="modules" name="modules" value="37">视频管理&nbsp;&nbsp;
+                        </div>
+                    </li>
+                    <li>
+                        <label class="top">
+                            己选模块
+                        </label>
+                        <select id="one_category" name="one_category" onchange="changeCategory(this,'two_category')" multiple="multiple" style="height:150px;">
+                        </select>
+                    </li>
+                    <li>
+                        <label class="top">
+                            二级栏目
+                        </label>
+                        <select id="two_category" name="two_category" onchange="changeCategory(this,'three_category')" multiple="multiple" style="height:100px;">
+                            <option selected="selected" value="">请选择</option>
+                        </select>
+                        <span class="span"><a href="#" onclick="openColumnWin('one_category');">管理</a></span>
+                    </li>
+                    <li>
+                        <label class="top">
+                            三级栏目
+                        </label>
+                        <select id="three_category" name="three_category" onchange="changeCategory(this,'four_category')" multiple="multiple" style="height:100px;">
+                            <option selected="selected" value="">请选择</option>
+                        </select>
+                        <span class="span"><a href="#" onclick="openColumnWin('two_category');">管理</a></span>
+                    </li>
+                    <li>
+                        <label class="top">
+                            四级栏目
+                        </label>
+                        <select id="four_category" name="four_category" multiple="multiple" style="height:100px;">
+                            <option selected="selected" value="">请选择</option>
+                        </select>
+                        <span class="span"><a href="#" onclick="openColumnWin('three_category');">管理</a></span>
+                    </li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li>
+                    	<label class="top">
+                            栏目定义
+                        </label> 
+                        <div id="selectRadio">
+                        {~isLang2()}<span class="span"><a href="#" onClick="addNav()">管理</a></span> 
+
+                        <span id="navList">
+                        		当前栏目效果：<br/>
+                                <volist name="part" id="vo">
+                                	<if condition="$vo.is_publish eq 1">
+                                    	<a href="#" onClick="addNav(false,{$vo.id})" va="{$vo.id}">{$vo.title}</a>
+                                    <else/>
+                                    	<a href="#" class="null" onClick="addNav(false,{$vo.id})" va="{$vo.id}">{$vo.title}</a>
+                                    </if>
+                                    <notempty name="vo.next">
+                                    &gt;&gt;
+                                    	<volist name="vo.next" id="tt">
+                                        	<if condition="$tt.is_publish eq 1">
+                                        		<a class="nextPart" href="#" onClick="addNav(false,{$tt.id})" va="{$tt.id}">{$tt.title}</a>
+                                             <else/>
+                                             	<a class="null" href="#" onClick="addNav(false,{$tt.id})" va="{$tt.id}">{$tt.title}</a>
+                                             </if>
+                                        </volist>
+                                    </notempty>
+                                    <br/>
+                                </volist>
+
+                        </span>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <label>
+                            开通空间时间
+                        </label>
+                        <input type="text" id="begin_time" name="begin_time" onClick="WdatePicker()" value="<?php echo date('Y-m-d',$custom['begin_time']);?>" class="type-text" style="width:282px;">
+                    </li>
+                    <li>
+                        <label>
+                            空间到期时间
+                        </label>
+                        <input type="text" id="end_time" name="end_time" onClick="WdatePicker()" value="<?php echo date('Y-m-d',$custom['end_time']);?>" class="type-text" style="width:282px;">
+                    </li>
+                    <li>
+                        <label>
+                            空间容量
+                        </label>
+                        <input type="text" id="space_mb" name="space_mb" value="<?php echo $custom['space_mb'];?>" class="type-text" style="width:282px;">MB
+                    </li>
+                    <li>
+                        <label>
+                        </label>
+                        <input type="submit" value="生成系统" class="button button-green" />
+                    </li>
+                </ul>
+            </fieldset>
+        </form><!-- 栏目管理 -->
+        <div id="nav_box" style="display:none;">
+            <form id="nav_form" action="" method="post" class="form">
+                <fieldset>
+                	<input type="hidden" name="getId" value="" />
+                    <ul class="align-list">
+                        <li>
+                            <h3>栏目名称自定义</h3>
+                        </li>
+                        <li style="height:30px;">
+                            <div id="msg_part" style="display:none;line-height:30px;text-align:center;height:30px;color:#fff;">
+                            </div>
+                        </li>
+                        <li>
+                        	<label>
+                                选择父类
+                            </label> 
+                      		<select id="pidPart" name="pid" style="padding: 7px;">
+                                 {~_partF()}
+                            </select>
+                            <a id="deletePart" class="delete" onclick="deletePart()" href="#">删除</a>
+                        </li>
+                        <li id="selectLang"><label>
+                                选择语言
+                                        <a class="issue colorTipContainer red" href="#">
+                                        ?
+                                        </a>
+                            </label> 
+                        	{~isLang2()}
+                        	{*~isLang(false)*}
+                        </li>
+                        <li>
+                            <label>
+                                栏目标题
+                            </label>
+                            <input name="title" id="title" class="type-text">
+                        </li>
+                        <li>
+                        	<label>
+                                Url<a href="#" class="issue" title="前台跳转的地址，连接到本网站_ _APP_ _/Index；外网:http://xxxx.com">?</a>
+                            </label>
+                            <input name="url" id="title" class="type-text">
+                        </li>
+                        <li>
+                            <label>
+                                描述
+                            </label>
+                            <textarea id="description" name="description" cols="100" rows="3"></textarea>
+                        </li>
+                        <li>
+                        	<label>操作模块<a href="#" class="issue" title="填写页面操作模块">?</a></label>
+                            <input name="nowModule" id="nowModule" class="type-text">
+                        </li>
+                        <li>
+                            <label>
+                                排序<a href="#" class="issue" title="使用倒序排列">?</a>
+                            </label>
+                            <input name="orderNum" id="ordernum" value="10" class="type-text" style="width:100px"><em>提示：数字最大排最前（关联到前后台排序）</em>
+                        </li>
+                        <li>
+                            <label>
+                                现在发布<a href="#" class="issue" title="在网站前台显示">?</a>
+                            </label>
+                            <input type="checkbox" id="is_publish" name="is_publish" value="1" checked>
+                        </li>
+                        <li>
+                            <label>
+                            </label>
+                            <input type="submit" value="修改栏目" class="button" onClick="return addPart(true)"/>
+                            <input type="submit" value="添加栏目" class="button button-green" id="nav_form_add"  onClick="return addPart()" />
+                            <input type="reset" value="重置" class="button button-red" />
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div><!-- 多语言管理 -->
+        <div id="column_box" style="display:none">
+            <form id="column_form" action="" method="post" class="form">
+                <input type="hidden" id="id" name="id" value=""><input type="hidden" id="pid" name="pid" value=""><input type="hidden" id="my_id" name="my_id" value="">
+                <fieldset>
+                    <ul class="align-list">
+                        <li>
+                            <h3>栏目标题与属性设置</h3>
+                        </li>
+                        <li style="height:30px;">
+                            <div id="msg_column" style="display:none;line-height:30px;text-align:center;height:30px;color:#fff;">
+                            </div>
+                        </li>
+                        <li>
+                            <label>
+                                栏目列表
+                            </label>
+                            <select id="column_id" name="column_id" onchange="selectedColumn(this)" style="padding: 7px;">
+                            </select>&nbsp;&nbsp;&nbsp;<a href="#" class="delete" onclick="deleteColumn()">删除</a>
+                        </li>
+                        <!--<li id="goods_muitlphoto">
+                        <label>多图展示 <a href="#" class="issue" title="产品附加功能">?</a></label>
+                        <input type="checkbox" name="is_multiple images" />
+                        </li>-->
+                        <li>
+                            {~isLang(false)}
+                        </li>
+                        <li>
+                            <label>
+                                栏目标题
+                            </label>
+                            <input name="title" id="title" class="type-text">
+                        </li>
+                        <li>
+                            <label>
+                                别名 <a href="#" class="issue" title="指的是前台URL路径,如News/index">?</a>
+                            </label>
+                            <input name="alias" id="alias" class="type-text" style="width:300px">
+                        </li>
+                        <li>
+                            <label>
+                                呈现样式 <a href="#" class="issue" title="“列表”和“单页”是关联前后台展示数据方式，“自动”会在后台选择它的下一级分类">?</a>
+                            </label>
+                            <input type="radio" id="tpl_one" name="tpl_one" value="auto" checked="checked">自动&nbsp;&nbsp;<input type="radio" id="tpl_one" name="tpl_one" value="list">列表&nbsp;&nbsp;<input type="radio" id="tpl_one" name="tpl_one" value="one">单页图文&nbsp;&nbsp;
+                        </li>
+                        <li>
+                            <label>
+                                能否评论<a href="#" class="issue" title="标示这个分类下的文章是否显示评论">?</a>
+                            </label>
+                            <input type="radio" id="is_comment" name="is_comment" value="1">是&nbsp;&nbsp;<input type="radio" id="is_comment" name="is_comment" value="0" checked="checked">否
+                        </li>
+                        <li>
+                            <label>
+                                标签<a href="#" class="issue" title="分类的搜索关键字">?</a>
+                            </label>
+                            <input name="tag" id="tag" class="type-text">
+                        </li>
+                        <li>
+                            <label>
+                                描述
+                            </label>
+                            <textarea id="description" name="description" cols="100" rows="3">
+                            </textarea>
+                        </li>
+                        <li>
+                            <label>
+                                前台自定义URL<a href="#" class="issue" title="例如：News/index/cid/120">?</a>
+                            </label>
+                            <input name="furl" id="furl" class="type-text" style="width:390px">
+                        </li>
+                        <li>
+                            <label>
+                                后台自定义URL<a href="#" class="issue" title="例如：User/index/cid/31">?</a>
+                            </label>
+                            <input name="burl" id="burl" class="type-text" style="width:390px">
+                        </li>
+                        <li>
+                            <label>
+                                排序<a href="#" class="issue" title="使用倒序排列">?</a>
+                            </label>
+                            <input name="ordernum" id="ordernum" value="10" class="type-text" style="width:100px"><em>提示：数字最大排最前（关联到前后台排序）</em>
+                        </li>
+                        <li>
+                            <label>
+                                现在发布<a href="#" class="issue" title="在网站前台显示">?</a>
+                            </label>
+                            <input type="checkbox" id="is_publish" name="is_publish" value="1">
+                        </li>
+                        <li>
+                            <label>
+                            </label>
+                            <input type="submit" value="修改栏目" class="button" onclick="return updateColumn()"/><input type="submit" value="添加栏目" class="button button-green" onclick="return addColumn()"/><input type="reset" value="重置" class="button button-red" />
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div><!-- 多语言管理 -->
+        <div id="lang_box" style="display:none">
+            <form id="lang_form" action="" method="post" class="form">
+                <input type="hidden" name="pid" value="11">
+                <fieldset>
+                    <ul class="align-list">
+                        <li>
+                            <h3>多语言管理</h3>
+                        </li>
+                        <li style="height:30px;">
+                            <div id="msg_lang" style="display:none;line-height:30px;text-align:center;height:30px;color:#fff;">
+                            </div>
+                        </li>
+                        <li>
+                            <label>
+                                多语言
+                            </label>
+                            <select id="lang_id" name="lang_id" onchange="selectedLang(this)" style="padding: 7px;">
+                            </select>&nbsp;&nbsp;&nbsp;<a href="#" class="update" onclick="defaultLang()">默认</a>&nbsp;&nbsp;<a href="#" class="delete" onclick="deleteLang()">删除</a>
+                        </li>
+                        <li>
+                            <label>
+                                语言名称
+                            </label>
+                            <input name="title" id="title" class="type-text">
+                        </li>
+                        <li>
+                            <label>
+                                别名
+                            </label>
+                            <input name="alias" id="alias" class="type-text">
+                        </li>
+                        <li>
+                            <label>
+                                描述
+                            </label>
+                            <textarea id="description" name="description" cols="100" rows="3">
+                            </textarea>
+                        </li>
+                        <li>
+                            <label>
+                                排序
+                            </label>
+                            <input name="ordernum" id="ordernum" value="10" class="type-text">
+                        </li>
+                        <li>
+                            <label>
+                            </label>
+                            <input type="submit" value="修改语言" class="button" onclick="return updateLang()"/><input type="submit" value="添加语言" class="button button-green" onclick="return addLang()"/><input type="reset" value="重置" class="button button-red" />
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+        <script>
+            $(function(){
+                var langs = "<?php echo $custom['langs'];?>".split(",");
+                var modules = "<?php echo $custom['modules'];?>".split(",");
+                $(modules).each(function(i, value){
+                    $('input[name=modules][value=' + value + ']').attr("checked", true);
+                });
+                $(langs).each(function(i, value){
+                    $('input[name=langs][value=' + value + ']').attr("checked", true);
+                });
+                
+                $.getJSON("__APP__/Admin/Custom/updateModules", {
+                    'modules[]': modules
+                }, function(json){
+                    $('#one_category').html('');
+                    //$('#one_category').append('<option selected="selected" value="">请选择</option>');
+                    $(json).each(function(i, obj){
+                        $('#one_category').append('<option value="' + obj.id + '">' + obj.title + '</option>');
+                    });
+                });
+                
+                $("#column_form input[name=lang]").click(function(){
+                    $('#column_form #title').val('');
+                    var id = $('#column_form #column_id').val();
+                    var lang = $(this).val();
+                    $.getJSON('__APP__/Admin/Custom/getCategoryByLang', {
+                        'id': id,
+                        'lang': lang
+                    }, function(data){
+                        if (data != null) {
+                            $('#column_form #id').val(data.id);
+                            $('#column_form #my_id').val(data.my_id);
+                            $('#column_form #title').val(data.title);
+                            $('#column_form #alias').val(data.alias);
+                            $('#column_form #tag').val(data.tag);
+                            $('#column_form #burl').val(data.burl);
+							$('#column_form #furl').val(data.furl);
+                            $('#column_form #tpl_one[value=' + data.tpl_one + ']').attr('checked', true);
+                            $('#column_form #is_publish').attr('checked', data.is_publish == 0 ? false : true);
+                            $('#column_form #ordernum').val(data.ordernum);
+                            $('#column_form #description').val(data.description);
+                        }
+                        else {
+                            //console.log(data);
+                        }
+                    });
+                });
+                
+                $('#column_form input[name=tpl_one]').change(function(){
+                    var tpl_one = $(this).val();
+                    if (tpl_one == 'one/title_content') {
+                        $('#style_two').hide();
+                    }
+                    else {
+                        $('#style_two').show();
+                    }
+                });
+                
+                $('[title]').colorTip({
+                    color: 'red'
+                });
+				
+				$('#clearUserData').click(function(){
+					if(confirm('确定要清空用户数据吗？删除后无法恢复')) {
+						$.get('__APP__/Admin/Custom/clearUserData',{},function(result){
+							window.location.reload();
+						});
+					}
+					
+				});
+            });
+            
+            //ajax操作提示
+            function optMsg(eleid, text, bgcolor){
+                $('#' + eleid).text(text);
+                $('#' + eleid).css({
+                    'background-color': bgcolor
+                });
+                $('#' + eleid).fadeIn().delay(2000).fadeOut(400);
+            }
+            
+            //分类操作--------------------------------------------------------------
+            function updateCategory(select_id){
+                var select_text = $("#" + select_id).find("option:selected").text();
+                $("#edit_category").lightbox_me({
+                    centered: true,
+                    onLoad: function(){
+                        $("#edit_category").find('#title').val(select_text);
+                    }
+                });
+            }
+            
+            function addCategory(select_id){
+                $("#edit_category").lightbox_me({
+                    centered: true,
+                    onLoad: function(){
+                        $("#edit_category").find('#title').val('');
+                        $("#edit_category").find('#keyword').val('');
+                        $("#edit_category").find('#burl').val('');
+						$("#edit_category").find('#furl').val('');
+                        $("#edit_category").find('#show_style').get(0).checked = true;
+                    }
+                });
+            }
+            
+            function deleteCategory(select_id){
+                var select_text = $("#" + select_id).find("option:selected").text();
+                if (confirm(select_text)) {
+                    alert('del');
+                }
+            }
+            
+            //语言操作---------------------------------------------------------------
+            $('input[name=langs]').change(function(){
+                var langs = new Array(), i = 0;
+                $('input[name=langs]').each(function(){
+                    if ($(this).attr('checked') != undefined) {
+                        langs[i] = $(this).attr('value');
+                        i++;
+                    }
+                });
+                $.getJSON("__APP__/Admin/Custom/updateLangs", {
+                    'langs[]': langs
+                }, function(json){
+                    window.location.reload();
+                });
+            });
+            
+            function clearLangInputValue(){
+                $('#lang_form #title').val('');
+                $('#lang_form #alias').val('');
+                $('#lang_form #ordernum').val('10');
+                $('#lang_form #description').val('');
+            }
+            
+            function openLangWin(){
+                $("#lang_box").lightbox_me({
+                    centered: true,
+                    onLoad: function(){
+                        $('#lang_id').load('__APP__/Admin/Custom/selectOptionLang', {
+                            'pid': 11
+                        });
+                        window.clearLangInputValue();
+                    },
+                    onClose: function(){
+                        $('#msg_lang').hide();
+                    }
+                });
+            }
+            
+            function addLang(){
+                $('#lang_form').ajaxForm({
+                    dataType: 'json',
+                    url: '__APP__/Admin/Custom/addLang',
+                    success: function(data){
+                        $('#lang_id').load('__APP__/Admin/Custom/selectOptionLang', {
+                            'pid': 11
+                        }, function(response, status, xhr){
+                            if (status == "error") {
+                                window.optMsg('msg_lang', '添加语言失败！', 'red');
+                            }
+                            else {
+                                window.optMsg('msg_lang', '添加语言成功！', '#0A8C00');
+                                window.clearLangInputValue();
+                            }
+                        });
+                    }
+                });
+            }
+            
+            function updateLang(){
+                var lang_id = $('#lang_id').val();
+                if (lang_id == 0) {
+                    window.optMsg('msg_lang', '请选择要修改的语言！', 'red');
+                    return false;
+                }
+                else {
+                    $('#lang_form').ajaxForm({
+                        dataType: 'json',
+                        url: '__APP__/Admin/Custom/updateLang',
+                        success: function(data){
+                            $('#lang_id').load('__APP__/Admin/Custom/selectOptionLang', {
+                                'pid': 11
+                            }, function(response, status, xhr){
+                                if (status == "error") {
+                                    window.optMsg('msg_lang', '修改语言失败！', 'red');
+                                }
+                                else {
+                                    window.optMsg('msg_lang', '修改语言成功！', '#0A8C00');
+                                }
+                                $('#lang_id').val(lang_id);
+                            });
+                        }
+                    });
+                }
+            }
+            
+            function selectedLang(_this){
+                $.getJSON('__APP__/Admin/Category/getCategory', {
+                    'id': $(_this).val()
+                }, function(data){
+                    $('#lang_form #title').val(data.title);
+                    $('#lang_form #alias').val(data.alias);
+                    $('#lang_form #ordernum').val(data.ordernum);
+                    $('#lang_form #description').val(data.description);
+                });
+            }
+            
+            function deleteLang(){
+                var lang_id = $('#lang_id').val();
+                if (lang_id == 0) {
+                    window.optMsg('msg_lang', '请选择要删除的语言！', 'red');
+                }
+                else {
+                    var lang_text = $('#lang_id').find("option:selected").text();
+                    if (confirm("确认要删除“" + lang_text + "”，删除后无法恢复！")) {
+                    
+                        $.get('__APP__/Admin/Custom/deleteCategory', {
+                            'id': lang_id
+                        }, function(data){
+                            $('#lang_id').load('__APP__/Admin/Custom/selectOptionLang', {
+                                'pid': 11,
+                                'id': lang_id
+                            }, function(response, status, xhr){
+                                if (status == "error") {
+                                    window.optMsg('msg_lang', '删除语言失败！', 'red');
+                                }
+                                else {
+                                    window.optMsg('msg_lang', '删除语言成功！', '#0A8C00');
+                                    $('#lang_id').val(0);
+                                    window.clearLangInputValue();
+                                }
+                            });
+                        });
+                    }
+                }
+            }
+            
+            //设置默认语言
+            function defaultLang(){
+                var lang_id = $('#lang_id').val();
+                if (lang_id == 0) {
+                    window.optMsg('msg_lang', '请选择要设置默认的语言！', 'red');
+                }
+                else {
+                    $.get('__APP__/Admin/Custom/defaultLang', {
+                        'lang_id': lang_id
+                    }, function(data){
+                        console.log(data);
+                        $('#lang_id').load('__APP__/Admin/Custom/selectOptionLang', {
+                            'pid': 11
+                        }, function(response, status, xhr){
+                            if (status == "error") {
+                                window.optMsg('msg_lang', '设置默认语言失败！', 'red');
+                            }
+                            else {
+                                window.optMsg('msg_lang', '设置默认语言成功！', '#0A8C00');
+                                $('#lang_id').val(lang_id);
+                            }
+                        });
+                    });
+                }
+            }
+            
+            //清除字段值
+            function clearColumnInputValue(){
+                $('#column_form #id').val('');
+                $('#column_form #my_id').val('');
+                $('#column_form #title').val('');
+                $('#column_form #alias').val('');
+                $('#column_form #tag').val('');
+                $('#column_form #burl').val('');
+				$('#column_form #furl').val('');
+                $('#column_form #ordernum').val('30');
+                $('#column_form #description').val('');
+            }
+            
+            //通过父下拉列表ID，获取下级下拉列表ID
+            function getSubSelectID(p_select_id){
+                var select_id = '';
+                if (p_select_id == 'one_category') {
+                    select_id = 'two_category';
+                }
+                else 
+                    if (p_select_id == 'two_category') {
+                        select_id = 'three_category';
+                    }
+                    else 
+                        if (p_select_id == 'three_category') {
+                            select_id = 'four_category';
+                        }
+                return select_id;
+            }
+            
+            //栏目打开管理窗口
+            function openColumnWin(p_select_id){
+                var pid = $('#' + p_select_id).val()[0];
+                $('#column_form #pid').val(pid);
+                if (pid == '') {
+                    alert('请选择上级栏目！');
+                }
+                else {
+                    var column_id_val = '';
+                    $("#column_box").lightbox_me({
+                        centered: true,
+                        onLoad: function(){
+                            $('#column_id').load('__APP__/Admin/Custom/selectOptionColumn', {
+                                'pid': pid
+                            }, function(){
+                                var select_id = getSubSelectID(p_select_id);
+                                column_id_val = $('#' + select_id).val();
+                                $('#column_id').val(column_id_val);
+                                $('#column_id').trigger('change');
+                            });
+                            window.clearColumnInputValue();
+                        },
+                        onClose: function(){
+                            var select_id = getSubSelectID(p_select_id);
+                            $.getJSON("__APP__/Admin/Custom/selectModule", {
+                                "pid": pid
+                            }, function(json){
+                                $('#' + select_id).html('');
+                                //$('#'+select_id).append('<option selected="selected" value="">请选择</option>');
+                                var is_fixed = '';
+                                $(json.list).each(function(i, obj){
+                                    if (obj.is_fixed == '1') {
+                                        is_fixed = 'color:red;';
+                                    }
+                                    else {
+                                        is_fixed = '';
+                                    }
+                                    var str_tr = '<option value="' + obj.id + '" style="' + is_fixed + '">' + obj.title + '</option>';
+                                    $('#' + select_id).append(str_tr);
+                                });
+                                $('#' + select_id).val(column_id_val);
+                                $('#msg_column').hide();
+                            });
+                        }
+                    });
+                }
+            }
+            
+            //产品定制功能
+            function goodsCustom(){
+                
+            }
+            
+            //添加栏目
+            function addColumn(){
+            
+                var one_category = $('#one_category').val();
+                var two_category = $('#two_category').val();
+                var three_category = $('#three_category').val();
+                
+                $('#column_form').ajaxForm({
+                    dataType: 'json',
+                    data: {
+                        'one_category': one_category != null ? one_category[0] : '',
+                        'two_category': two_category != null ? two_category[0] : '',
+                        'three_category': three_category != null ? three_category[0] : ''
+                    },
+                    url: '__APP__/Admin/Custom/addColumn',
+                    success: function(data){
+                        $('#column_id').load('__APP__/Admin/Custom/selectOptionColumn', {
+                            'pid': $('#column_form #pid').val()
+                        }, function(response, status, xhr){
+                            if (status == "error") {
+                                window.optMsg('msg_column', '添加栏目失败！', 'red');
+                            }
+                            else {
+                                window.optMsg('msg_column', '添加栏目成功！', '#0A8C00');
+                                window.clearColumnInputValue();
+                                $('#column_form #column_id').val('');
+                            }
+                        });
+                    }
+                });
+            }
+            
+            //修改栏目
+            function updateColumn(){
+                var column_id = $('#column_id').val();
+                if (column_id == 0) {
+                    window.optMsg('msg_column', '请选择要修改的栏目！', 'red');
+                    return false;
+                }
+                else {
+                    $('#column_form').ajaxForm({
+                        dataType: 'json',
+                        url: '__APP__/Admin/Custom/updateColumn',
+                        success: function(data){
+                            $('#column_id').load('__APP__/Admin/Custom/selectOptionColumn', {
+                                'pid': $('#column_form #pid').val()
+                            }, function(response, status, xhr){
+                                if (status == "error") {
+                                    window.optMsg('msg_column', '修改栏目失败！', 'red');
+                                }
+                                else {
+                                    window.optMsg('msg_column', '修改栏目成功！', '#0A8C00');
+                                }
+                                $('#column_id').val(column_id);
+                            });
+                        }
+                    });
+                }
+            }
+            
+            //删除栏目
+            function deleteColumn(){
+                var column_id = $('#column_id').val();
+                if (column_id == 0) {
+                    window.optMsg('msg_lang', '请选择要删除的栏目！', 'red');
+                }
+                else {
+                    var column_text = $('#column_id').find("option:selected").text();
+                    if (confirm("确认要删除“" + column_text + "”，删除后无法恢复！")) {
+                    
+                        $.get('__APP__/Admin/Custom/deleteCategory', {
+                            'id': column_id
+                        }, function(data){
+                        
+                            if (data == 'sub_exist') {
+                                window.optMsg('msg_column', '请先删除子分类！', 'red');
+                                return;
+                            }
+                            if (data == 'on_delete') {
+                                window.optMsg('msg_column', '系统默认不能删除！', 'red');
+                                return;
+                            }
+                            if (data == 'true') {
+                                window.optMsg('msg_column', '删除栏目成功！', '#0A8C00');
+                            }
+                            else {
+                                window.optMsg('msg_column', '删除栏目失败！', 'red');
+                            }
+                            window.clearColumnInputValue();
+                            $('#column_id').load('__APP__/Admin/Custom/selectOptionColumn', {
+                                'pid': $('#column_form #pid').val(),
+                                'id': column_id
+                            }, function(response, status, xhr){
+                            
+                            });
+                        });
+                    }
+                }
+            }
+            
+            //选中栏目
+            function selectedColumn(_this){
+                var column_id_val = $(_this).val();
+                if (column_id_val != '') {
+                    $.getJSON('__APP__/Admin/Category/getCategory', {
+                        'id': $(_this).val()
+                    }, function(data){
+                        $('#column_form #id').val(data.id);
+                        $('#column_form #my_id').val(data.my_id);
+                        $('#column_form #title').val(data.title);
+                        
+                        $('#column_form #is_publish').attr('checked', data.is_publish == 0 ? false : true);
+                        $('#column_form #alias').val(data.alias);
+                        $('#column_form #tag').val(data.tag);
+                        $('#column_form #burl').val(data.burl);
+						$('#column_form #furl').val(data.furl);
+                        $('#column_form input[name=lang][value=' + data.lang + ']').attr('checked', true);
+                        $('#column_form #tpl_one[value="' + data.tpl_one + '"]').attr('checked', true);
+                        $('#column_form input[name=tpl_one][value="' + data.tpl_one + '"]').trigger('change');
+                        $('#column_form #tpl_two[value=' + data.tpl_two + ']').attr('checked', true);
+                        $('#column_form #ordernum').val(data.ordernum);
+                        $('#column_form #description').val(data.description);
+                    });
+                }
+                else {
+                    window.clearColumnInputValue();
+                }
+            }
+            
+            $('input[name=modules]').change(function(){
+                var modules = new Array(), i = 0;
+                $('input[name=modules]').each(function(){
+                    if ($(this).attr('checked') != undefined) {
+                        modules[i] = $(this).attr('value');
+                        i++;
+                    }
+                });
+                $.getJSON("__APP__/Admin/Custom/updateModules", {
+                    'modules[]': modules
+                }, function(json){
+                    $('#one_category').html('');
+                    $('#one_category').append('<option value="" selected>请选择</option>');
+                    $(json).each(function(i, obj){
+                        $('#one_category').append('<option value="' + obj.id + '">' + obj.title + '</option>');
+                    });
+                });
+            });
+            
+            //模块下拉联动---------------------------------------------------------------
+            function changeCategory(_this, target_id){
+                if (target_id == 'two_category') {
+                    $('#three_category').html('');
+                    //$('#three_category').append('<option value="" selected>请选择</option>');
+                    $('#four_category').html('');
+                    //$('#four_category').append('<option value="" selected>请选择</option>');
+                }
+                var id = $(_this).val()[0];
+                $.getJSON("__APP__/Admin/Custom/selectModule", {
+                    "pid": id
+                }, function(json){
+                    $('#' + target_id).html('');
+                    //$('#'+target_id).append('<option value="" selected>请选择</option>');
+                    var is_fixed = '';
+                    $(json.list).each(function(i, obj){
+                        if (obj.is_fixed == '1') {
+                            is_fixed = 'color:red;';
+                        }
+                        else {
+                            is_fixed = '';
+                        }
+                        var str_tr = '<option value="' + obj.id + '" style="' + is_fixed + '">' + obj.title + '</option>';
+                        $('#' + target_id).append(str_tr);
+                    });
+                });
+            }
+            
+            //选择语言
+            $("input[name=lang]").click(function(){
+                $.getJSON('__APP__/Admin/News/edit', {
+                    'id': '{.id}',
+                    'lang': $(this).val(),
+                    'cid': '{.cid}'
+                }, function(){
+                
+                });
+            });
+            
+			//添加自定义栏目名
+           //	$("#nav_form_add").click(function(){
+			function addPart(is_edit){
+				$getid = $("#nav_form input[name=getId]").val();
+				$pid = $("#pidPart").val();
+				$title = $("#nav_form input[name=title]").val();
+				$lang = $("#nav_form input[name=lang111]:checked").val();
+				$url = $("#nav_form input[name=url]").val();
+				$nowModule = $("#nav_form input[name=nowModule]").val();
+				$description = $("#nav_form #description").val();
+				$orderNum = $("#nav_form input[name=orderNum]").val();
+				$is_publish = $("#nav_form input[name=is_publish]:checked").val();
+				if(!$title || !$url)
+				{
+					alert('必须填写完整信息');
+					return false;
+				}
+				if(is_edit == true) //编辑
+				{
+					
+					$.ajax({
+					type:"POST",
+					url: "__APP__/Admin/Custom/editPart",
+					dataType: "json",
+					data:{
+						'id' : $getid,
+						'title' : $title,
+						'pid' : $pid,
+						'lang' :$lang,
+						'url' :$url,
+						'description' : $description,
+						'orderNum' : $orderNum,
+						'is_publish' : $is_publish,
+						'nowModule' : $nowModule
+					},
+					success: function(data, textStatus){
+						if(data == 1)
+						{
+							window.optMsg('msg_part', '添加栏目成功！', '#0A8C00');
+						}else
+						{
+							window.optMsg('msg_part', '添加栏目失败！', 'red');
+						}
+					}
+				})
+				}else{ 	//添加
+				$.ajax({
+					type:"POST",
+					url: "__APP__/Admin/Custom/addColumnPart",
+					dataType: "json",
+					data:{
+						'title' : $title,
+						'pid' : $pid,
+						'lang' :$lang,
+						'url' :$url,
+						'description' : $description,
+						'orderNum' : $orderNum,
+						'is_publish' : $is_publish,
+						'nowModule' : $nowModule
+					},
+					success: function(data, textStatus){
+						if(data == 1)
+						{
+							window.optMsg('msg_part', '添加栏目成功！', '#0A8C00');
+							
+						}else
+						{
+							//alert('添加栏目失败！');
+							window.optMsg('msg_part', '添加栏目失败！', 'red');
+						}
+					}
+				})
+				}
+				return false;
+			}		
+			//显示栏目自定义名称对话框
+			function addNav(_this,getId){
+				//修改
+				$lang = $("#selectRadio input[name=lang111]:checked").val();
+				ajaxPartList($lang);
+				if(_this == false)
+				{
+					$id = getId;
+					$.ajax({
+						type:'POST',
+						url:'__APP__/Admin/Custom/partInfo',
+						dataType: "json",
+						data:{
+							'id':$id
+							},
+						success:function(data){
+							$("#nav_form input[name=title]").val(data.title);
+							$("#nav_form input[name=url]").val(data.url);
+							$("#nav_form #description").val(data.description);
+							$("#nav_form input[name=orderNum]").val(data.orderNum);
+							$("#nav_form input[name=getId]").val(data.id);
+							$("#nav_form input[name=nowModule]").val(data.nowModule);
+							$("#nav_form input[name=lang111]").each(function(){
+								if(this.value == data.lang){
+									//this.check
+									$(this).attr("checked","checked");
+								}
+							});
+							$("#pidPart option[value="+data.pid+"]").attr("selected", true);
+							if(data.is_publish == 1){
+								$("#nav_form input[name=is_publish]").attr("checked","checked");
+							}else{
+								$("#nav_form input[name=is_publish]").removeAttr("checked");
+							}
+							//$("#nav_form input[name=nowModule]").val(data.nowModule);
+						}
+					})
+					$("#nav_box").lightbox_me({
+						centered: true,
+						onClose: function(){getPartList();}
+					});
+				}else //点击管理
+				{
+					$("#nav_form #nav_pid").val('');
+					$("#nav_form input[name=title]").val('');
+					//$("#nav_form input[name=lang]:checked").val();
+					$("#nav_form input[name=url]").val('');
+					$("#nav_form #description").val('');
+					$("#nav_form input[name=getId]").val('');
+					$("#nav_form input[name=orderNum]").val(10);
+					$("#nav_form input[name=nowModule]").val('');
+					$("#nav_form input[name=is_publish]").attr("checked","checked");
+					
+					$("#nav_box").lightbox_me({
+						centered: true,
+						onClose: function(){getPartList();}
+					});
+				}
+			}
+			//获得当前栏目函数
+			function getPartList(){
+				$lang = $("input[name=lang111]:checked").val();
+							$("#navList").html('');
+							$.ajax({
+								type:'POST',
+								url:'__APP__/Admin/Custom/partList',
+								dataType:'json',
+								data:{
+									'lang': $lang
+									 },
+								success: function(data){
+									if(data != 0){
+										$("#navList").html('当前栏目效果：<br/>');
+										for(i=0;i<data.length;i++){
+										if(data[i].is_publish == 0){
+											$("#navList").append('<a class="null" href="#" onClick="addNav(false,'+data[i].id+')" va="'+data[i].id+'">'+data[i].title+'</a>');
+										}else{
+											$("#navList").append('<a href="#" onClick="addNav(false,'+data[i].id+')" va="'+data[i].id+'">'+data[i].title+'</a>');
+										}
+										if(data[i].next){
+										$("#navList").append('&gt;&gt;');
+										for(ii=0;ii<data[i].next.length;ii++){
+												if(data[i].next[ii].is_publish == 0){
+												$("#navList").append('<a class="null" href="#" onClick="addNav(false,'+data[i].next[ii].id+')" va="'+data[i].next[ii].id+'">'+data[i].next[ii].title+'</a>');
+											}
+											else{
+												$("#navList").append('<a class="nextPart" href="#" onClick="addNav(false,'+data[i].next[ii].id+')" va="'+data[i].next[ii].id+'">'+data[i].next[ii].title+'</a>');
+											}
+												}
+											}
+												$("#navList").append('<br/>');
+										}	
+											}else{
+												$("#navList").html('暂无信息');
+										}
+									}
+								});
+			}
+			$("#selectRadio input[name=lang111]").change(function(){
+				$lang = $(this).val();
+				$("#navList").html('');
+				//,function(){
+					$.ajax({
+						type:'POST',
+						url:'__APP__/Admin/Custom/partList',
+						dataType:'json',
+						data:{
+							'lang': $lang
+							 },
+						success: function(data){
+							if(data != 0){
+								$("#navList").html('当前栏目效果：<br/>');
+								for(i=0;i<data.length;i++){
+									if(data[i].is_publish == 0){
+										$("#navList").append('<a class="null" href="#" onClick="addNav(false,'+data[i].id+')" va="'+data[i].id+'">'+data[i].title+'</a>');
+									}else{
+										$("#navList").append('<a href="#" onClick="addNav(false,'+data[i].id+')" va="'+data[i].id+'">'+data[i].title+'</a>');
+									}
+									if(data[i].next){
+										$("#navList").append('&gt;&gt;');
+										for(ii=0;ii<data[i].next.length;ii++){
+											if(data[i].next[ii].is_publish == 0){
+												$("#navList").append('<a class="null" href="#" onClick="addNav(false,'+data[i].next[ii].id+')" va="'+data[i].next[ii].id+'">'+data[i].next[ii].title+'</a>');
+											}
+											else{
+												$("#navList").append('<a class="nextPart" href="#" onClick="addNav(false,'+data[i].next[ii].id+')" va="'+data[i].next[ii].id+'">'+data[i].next[ii].title+'</a>');
+											}
+										}
+									}
+									$("#navList").append('<br/>');
+								}
+							}else{
+								$("#navList").html('暂无信息');
+								}
+							}
+						});
+			})
+			$("#selectLang input[name=lang111]").change(function(){
+				$lang = $(this).val();
+				ajaxPartList($lang);
+				})
+			//栏目ajax列表
+			function ajaxPartList($l){
+				$lang = $l;
+				$("#pidPart option").remove();
+				$.ajax({
+					type:'POST',
+					url:'__APP__/Admin/Custom/_partF',
+					data:{'lang' : $lang},
+					success:function(data){
+						$("#pidPart").append(data);
+					}
+				});
+			}
+			function deletePart(){
+				$getid = $("#nav_form input[name=getId]").val();
+				if(!$getid){
+					alert('请选择要删除的内容');
+				}else{
+					if(confirm('确定要删除记录吗?')){
+						$.ajax({
+							type:'POST',
+							url:'__APP__/Admin/Custom/deleteList',
+							data:{'id':$getid},
+							success:function(data){
+									if(data == 1){
+										$("#nav_form #nav_pid").val('');
+										$("#nav_form input[name=title]").val('');
+										$("#nav_form input[name=url]").val('');
+										$("#nav_form #description").val('');
+										$("#nav_form input[name=getId]").val('');
+										$("#nav_form input[name=nowModule]").val('');
+										$("#nav_form input[name=orderNum]").val(10);
+										alert('删除成功');
+										getPartList();
+									}else{
+										alert('删除失败');
+									}
+								}
+							});
+						}
+						return false;
+				}
+			}
+        </script>
+    </body>
+</html>

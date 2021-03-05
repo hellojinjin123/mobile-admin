@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>默认数据表格</title>
+<link rel="stylesheet" type="text/css" href="__ADMIN__/Public/css/base.css" />
+<script src="__ADMIN__/Public/js/jquery-1.7.1.min.js"></script>
+
+<script>
+var baseUrl = '__APP__/Admin/Goods';
+
+$(function(){
+
+	$("#rowpage").val('{$rowpage}');
+	
+	//全选/返选
+	$("#chk_all").click(function(){
+	     $("input[name='ids[]']").attr("checked",this.checked);
+	});
+
+	//排序
+	$("#on_ordernum").click(function(){
+		if(window.tipCheckbox()) {
+			$("#form_list").attr('action',baseUrl+'/ordernum');
+			$("#form_list").submit();
+		}
+	});
+
+	//移动
+	$("#on_move").click(function(){
+		if(window.tipCheckbox()) {
+			$('#category_button').val('移动');
+			$("#form_list").attr('action',baseUrl+'/move');
+			window.openCategoryBox();
+		}
+	});
+
+	//复制
+	$("#on_copy").click(function(){
+		if(window.tipCheckbox()) {
+			$('#category_button').val('复制');
+			$("#form_list").attr('action',baseUrl+'/copy');
+			window.openCategoryBox();
+		}
+	});
+
+	//移动和复制按钮,检查分类有没有选择
+	$('#category_button').click(function(){
+		if($('#one_category_id').get(0).options.length>1 && $('#one_category_id').val()=='') {
+			alert('一级分类未选择！');
+			return false;
+		}
+		if($('#two_category_id').get(0).options.length>1 && $('#two_category_id').val()=='') {
+			alert('二级分类未选择！');
+			return false;
+		}
+		if($('#three_category_id').get(0).options.length>1 && $('#three_category_id').val()=='') {
+			alert('三级分类未选择！');
+			return false;
+		}
+	});
+
+	//删除
+	$("#on_delete").click(function(){
+		if(window.tipCheckbox()) {
+			if(confirm('确认删除勾选的数据吗？删除后无法恢复！')) {
+				$("#form_list").attr('action',baseUrl+'/delete');
+				$("#form_list").submit();
+			} else {
+				return false;
+			}
+		}
+	});
+
+	//搜索
+	$("#search_button").click(function(){
+		var searchKey = $('#searchKey').val();
+		if(searchKey == '请输入关键字') {
+			alert('请输入搜索关键字！');
+			return false;
+		}
+		window.location.href = window.getSearchUrl();
+	});
+
+	//每页显示行数
+	$("#rowpage").change(function(){console.log(window.getSearchUrl());
+		window.location.href = window.getSearchUrl();
+		
+	});
+
+	//发布状态
+	$("input[name=is_publish]").click(function(){
+		window.updateField('isPublish',$(this).attr('value'), this.checked);
+	});
+
+	//首页状态
+	$("input[name=is_home]").click(function(){
+		window.updateField('isHome',$(this).attr('value'), this.checked);
+	});
+
+	//置顶状态
+	$("input[name=is_top]").click(function(){
+		window.updateField('isTop',$(this).attr('value'), this.checked);
+	});
+});
+
+function updateField(action,id, fval) {
+	var url = window.baseUrl+'/'+action+'/id/'+id+'/fval/'+fval;
+	var mes = null;
+	$.get(url,{},function(bool){
+		if( bool==1 ) {
+			opt_msg = $("#opt_msg").css('background-color','#319E01').text('已改变');
+		} else {
+			opt_msg = $("#opt_msg").css('background-color','#D50D0D').text('未改变');
+		}
+		opt_msg.show().animate({left: '+=300px'}, 100).delay(2000).animate({left: '-=300px'}, 100).fadeOut(100);
+	});
+}
+
+//返回搜索URL
+function getSearchUrl() {
+	return window.baseUrl+'/index/rowpage/'+$('#rowpage').val()+'/searchKey/'+$('#searchKey').val()+'/cid/{.cid}';
+}
+
+//搜索获取蕉点清空文字
+function inputText(_this,defText) {
+	if(_this.value == defText){
+		_this.value = '';
+		return;
+	}
+	if(_this.value == '') {
+		_this.value = defText;
+	}
+}
+
+//移动或复制分类选择
+function openCategoryBox(){
+	$('#category_box').fadeOut(0).fadeIn();
+	$.getJSON("__APP__/Admin/Index/selectCategoryByPid",{"pid":20},function(json){
+		$('#one_category_id').html('');
+		$('#one_category_id').append('<option value="" selected>请选择</option>');
+		$(json.list).each(function(i,obj){
+			var str_tr = '<option value="'+obj.id+'">'+obj.title+'</option>';
+			$('#one_category_id').append(str_tr);
+		});
+	});
+}
+
+//批量操作未选择checkbox提示
+function tipCheckbox() {
+	var n = $("input[name='ids[]']:checked").length;
+	if( n==0 ) {
+		alert('还没有未勾选数据！');
+		return false;
+	} else {
+		return true;
+	}
+}
+
+//分类下拉联动---------------------------------------------------------------
+function changeCategory(_this,target_id){
+	if( target_id=='two_category_id' ) {
+		$('#three_category_id').html('');
+		$('#three_category_id').append('<option value="" selected>请选择</option>');
+	}
+	var id = $(_this).val();
+	$.getJSON("__APP__/Admin/Index/selectCategoryByPid",{"pid":id},function(json){
+		$('#'+target_id).html('');
+		$('#'+target_id).append('<option value="" selected>请选择</option>');
+		$(json.list).each(function(i,obj){
+			var str_tr = '<option value="'+obj.id+'">'+obj.title+'</option>';
+			$('#'+target_id).append(str_tr);
+		});
+	});
+}
+
+//删除数据
+function deleteData(url) {
+	if(confirm('确认删除数据吗？删除后无法恢复！')) {
+		window.location.href = url;
+	} else {
+		return false;
+	}
+}
+</script>
+
+</head>
+<body>
+
+<form action="__APP__/Admin/News" method="post" id="form_list">
+<input type="hidden" name="cid" value="{.cid}" />
+<table class="grid-function" border="0" cellpadding="0" cellspacing="0">
+	<thead>
+		<tr>
+			<th width="600">
+				<div class="qw-fl grid-add-data">
+				<input type="button" value="添加分类" class="button button-red" onclick="javascript:location.href='__APP__/Admin/Guestbook/edit/cid/{.cid}'"/>
+				</div>
+				<div class="qw-fl grid-batch-operate">
+					批量操作：
+					<!-- <a href="#" title="推荐到首页"><img src="__ADMIN__/Public/imgs/house.png" align="top" /> 首页</a>&nbsp;&nbsp;
+					<a href="#" title="保持最顶"><img src="__ADMIN__/Public/imgs/go-top.png" align="top" /> 置顶</a>&nbsp;&nbsp;
+					<a href="#" title="网站显示"><img src="__ADMIN__/Public/imgs/publish.png" align="top" /> 发布</a>&nbsp;&nbsp; -->
+					<a href="#" id="on_ordernum" title="数字排序"><img src="__ADMIN__/Public/imgs/sort.png" align="top" /> 排序</a>&nbsp;&nbsp;
+					<a href="#" id="on_move" title="移动数据"><img src="__ADMIN__/Public/imgs/move.png" align="top" /> 移动</a>&nbsp;&nbsp;
+					<a href="#" id="on_copy" title="复制一份"><img src="__ADMIN__/Public/imgs/copy.png" align="top" /> 复制</a>&nbsp;&nbsp;
+					<a href="#" id="on_delete" title="彻底删除"><img src="__ADMIN__/Public/imgs/delete.png" align="top" /> 删除</a>&nbsp;&nbsp;
+				</div>
+				<div class="qw-fr">
+					<input name="searchKey" id="searchKey" value="{$searchKey}" onclick="inputText(this,'请输入关键字');" onblur="inputText(this,'请输入关键字');" class="grid-search-input" /> <input type="button" value="搜索" class="button" id="search_button" />
+				</div>
+			</th>
+		</tr>
+	</thead>
+	<!-- 移动和复制操作分类选择 -->
+	<tbody id="category_box" style="display:none;">
+		<tr>
+			<td align="center">选择分类
+				<select id="one_category_id" name="one_category_id" style="width:200px;" onchange="changeCategory(this,'two_category_id')">
+	              <option value="" selected="">请选择</option>
+	            </select>
+	            <select id="two_category_id" name="two_category_id" style="width:200px;" onchange="changeCategory(this,'three_category_id')">
+	              <option value="" selected="">请选择</option>
+	            </select>
+	            <select id="three_category_id" name="three_category_id" style="width:200px;" onchange="changeCategory(this,'')">
+	              <option value="" selected="">请选择</option>
+	            </select>
+	            <input type="submit" value="" class="button button-green" id="category_button" />
+			</td>
+		</tr>
+	</tbody>
+</table>
+<table class="grid-table" border="1" cellpadding="0" cellspacing="0"> 
+	<thead> 
+		<tr>
+			<th width="15"><input type="checkbox" id="chk_all"></th>			
+		    <th width="80">分类名称</th>
+		    <th width="75">待审核数/已审核数</th>
+		    <th width="110">回复需审核</th>		    
+		    <th width="45">操作</th>
+		</tr> 
+	</thead> 
+	<tbody>
+		<tr> 
+			<td><input type="checkbox" name="ids[]" id="ids{$vo.id}" value="{$i},{$vo.id}" /></td>
+			<td>产品留言</td>
+			<td>42/82</td>
+			<td><input type="checkbox" /></td>
+		    <td><a href="__APP__/Admin/Guestbook/edit/id/{$vo.id}/cid/{.cid}"><img src="__ADMIN__/Public/imgs/edit.png" /></a>&nbsp;&nbsp;&nbsp;
+		    <a href="#"><img src="__ADMIN__/Public/imgs/cross.png" /></a></td>
+		</tr>	
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="10">
+				<div class="qw-fl">
+					<select name="rowpage" id="rowpage">
+						<option value="10">显示10条</option>
+						<option value="25">显示25条</option>
+						<option value="50">显示50条</option>
+						<option value="99999">显示所有</option>
+					</select>
+				</div>
+				<div class="qw-fr">
+					<div class="grid-pagination">
+					{$pageBar}
+					</div>
+				</div>
+			</td>
+		</tr>
+	</tfoot>
+</table>
+</form>
+<div class="bottom-copyright bottom-fixed">版权所有.<a href="http://www.huyi.cn" target="_blank">环球互易</a>. 技术支持.<a href="http://www.16show.net" target="_blank">网建中心</a>&nbsp;&nbsp;&nbsp;</div>
+</body>
+</html>
+
+
+ 

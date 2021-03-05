@@ -1,0 +1,26 @@
+<div class="main_right"> 
+<div class="main_right_top">
+		 <script language="javascript" type="text/javascript">
+writeflashhtml("_swf=__HOME__/swf/xixi.swf", "_width=710", "_height=176" ,"_wmode=transparent");
+</script>
+</div>
+        <div class="main_right_main">
+          <div class="main_right_main_top"><img src="__HOME__/images/n_top.jpg" width="710" height="11" /></div>
+<div class="main_right_main_main">        
+  <div class="title"><a href="__APP__">首页</a> > 
+  <?php if(MODULE_NAME=='Join') { ?>
+  <a href="__APP__/Join.html">在线加盟</a> > {$location[0]['title']}</div>
+  <?php }elseif(MODULE_NAME=='Brand'){ ?>
+    品牌介绍</div>
+  <?php } else { ?>
+  <a href="__APP__/{$location[0]['alias']}.html">{$location[0]['title']}</a> > {$location[1]['title']}</div>
+  <?php } ?>
+
+          <div class="n_main">
+            {$obj.content|htmlspecialchars_decode}
+          </div>
+          </div>
+          <div class="main_right_main_bottom"><img src="__HOME__/images/n_bottom.jpg" width="710" height="11" /></div>
+        </div>
+    </div>
+	<div style="clear:both;"></div> 

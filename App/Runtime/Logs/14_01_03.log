@@ -1,0 +1,8 @@
+[ 2014-01-03T10:22:25+08:00 ] /skybroad/ | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001801s ]
+[ 2014-01-03T10:22:25+08:00 ] /skybroad/ | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000387s ]
+[ 2014-01-03T10:22:25+08:00 ] /skybroad/ | SQL: SHOW COLUMNS FROM `m_advert` [ RunTime:0.001668s ]
+[ 2014-01-03T10:22:25+08:00 ] /skybroad/ | SQL: SELECT * FROM `m_advert` ORDER BY id asc LIMIT 5  [ RunTime:0.000325s ]
+[ 2014-01-03T10:22:29+08:00 ] /skybroad/ | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001648s ]
+[ 2014-01-03T10:22:29+08:00 ] /skybroad/ | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000279s ]
+[ 2014-01-03T10:22:29+08:00 ] /skybroad/ | SQL: SHOW COLUMNS FROM `m_advert` [ RunTime:0.001181s ]
+[ 2014-01-03T10:22:29+08:00 ] /skybroad/ | SQL: SELECT * FROM `m_advert` ORDER BY id asc LIMIT 5  [ RunTime:0.000297s ]

@@ -1,0 +1,999 @@
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387415541805 | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001794s ]
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387415541805 | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000267s ]
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387415541805 | SQL: SHOW COLUMNS FROM `m_advert` [ RunTime:0.001369s ]
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387415541805 | SQL: SELECT * FROM `m_advert` ORDER BY id asc LIMIT 5  [ RunTime:0.000281s ]
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387415541805 | NOTIC: [8] Undefined variable: str AjaxloadAction.class.php 第 65 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined index:  mid SystemAction.class.php 第 12 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001551s ]
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000312s ]
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Use of undefined constant SCRIPT_FILENAME - assumed 'SCRIPT_FILENAME' SystemAction.class.php 第 64 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:24+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:25+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387415544454 | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001427s ]
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387415544454 | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000249s ]
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387415544454 | SQL: SHOW COLUMNS FROM `m_advert` [ RunTime:0.001103s ]
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387415544454 | SQL: SELECT * FROM `m_advert` ORDER BY id asc LIMIT 5  [ RunTime:0.000267s ]
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387415544454 | NOTIC: [8] Undefined variable: str AjaxloadAction.class.php 第 65 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined index:  mid SystemAction.class.php 第 12 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001468s ]
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000260s ]
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Use of undefined constant SCRIPT_FILENAME - assumed 'SCRIPT_FILENAME' SystemAction.class.php 第 64 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:26+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T09:12:27+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T09:25:27+08:00 ] /skybroad/index.php/Mobile/Contact | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001772s ]
+[ 2013-12-19T09:25:27+08:00 ] /skybroad/index.php/Mobile/Contact | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000270s ]
+[ 2013-12-19T09:25:27+08:00 ] /skybroad/index.php/Mobile/Contact | SQL: SHOW COLUMNS FROM `m_news` [ RunTime:0.001362s ]
+[ 2013-12-19T09:25:27+08:00 ] /skybroad/index.php/Mobile/Contact | SQL: SELECT * FROM `m_news` WHERE category_id=130 LIMIT 1  [ RunTime:0.000351s ]
+[ 2013-12-19T09:35:40+08:00 ] /skybroad/index.php/Mobile | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001505s ]
+[ 2013-12-19T09:35:40+08:00 ] /skybroad/index.php/Mobile | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000267s ]
+[ 2013-12-19T09:35:40+08:00 ] /skybroad/index.php/Mobile | SQL: SHOW COLUMNS FROM `m_advert` [ RunTime:0.001424s ]
+[ 2013-12-19T09:35:40+08:00 ] /skybroad/index.php/Mobile | SQL: SELECT * FROM `m_advert` ORDER BY id asc LIMIT 5  [ RunTime:0.000319s ]
+[ 2013-12-19T09:35:42+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387416941297 | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001452s ]
+[ 2013-12-19T09:35:42+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387416941297 | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000256s ]
+[ 2013-12-19T09:35:42+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387416941297 | SQL: SHOW COLUMNS FROM `m_advert` [ RunTime:0.001105s ]
+[ 2013-12-19T09:35:42+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387416941297 | SQL: SELECT * FROM `m_advert` ORDER BY id asc LIMIT 5  [ RunTime:0.000268s ]
+[ 2013-12-19T09:35:42+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387416941297 | NOTIC: [8] Undefined variable: str AjaxloadAction.class.php 第 65 行.
+[ 2013-12-19T09:54:48+08:00 ] /skybroad/index.php/Mobile/Contact | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001733s ]
+[ 2013-12-19T09:54:48+08:00 ] /skybroad/index.php/Mobile/Contact | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000264s ]
+[ 2013-12-19T09:54:48+08:00 ] /skybroad/index.php/Mobile/Contact | SQL: SHOW COLUMNS FROM `m_news` [ RunTime:0.001362s ]
+[ 2013-12-19T09:54:48+08:00 ] /skybroad/index.php/Mobile/Contact | SQL: SELECT * FROM `m_news` WHERE category_id=130 LIMIT 1  [ RunTime:0.000354s ]
+[ 2013-12-19T09:54:51+08:00 ] /skybroad/index.php/Mobile/Message | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001734s ]
+[ 2013-12-19T09:54:51+08:00 ] /skybroad/index.php/Mobile/Message | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000269s ]
+[ 2013-12-19T09:54:51+08:00 ] /skybroad/index.php/Mobile/Message | SQL: SHOW COLUMNS FROM `m_guestbook` [ RunTime:0.001443s ]
+[ 2013-12-19T09:54:51+08:00 ] /skybroad/index.php/Mobile/Message/verify | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001485s ]
+[ 2013-12-19T09:54:51+08:00 ] /skybroad/index.php/Mobile/Message/verify | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000256s ]
+[ 2013-12-19T09:54:51+08:00 ] /skybroad/index.php/Mobile/Message/verify | SQL: SHOW COLUMNS FROM `m_guestbook` [ RunTime:0.001087s ]
+[ 2013-12-19T10:54:28+08:00 ] /skybroad/index.php/Home | SQL: SHOW COLUMNS FROM `m_part` [ RunTime:0.001452s ]
+[ 2013-12-19T10:54:28+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_part` WHERE ( `lang` = 'zh-cn' ) AND ( `is_publish` = '1' ) AND ( `pid` = 0 ) ORDER BY orderNum desc [ RunTime:0.000392s ]
+[ 2013-12-19T10:54:28+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '31' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000262s ]
+[ 2013-12-19T10:54:28+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '32' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000277s ]
+[ 2013-12-19T10:54:28+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '33' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000349s ]
+[ 2013-12-19T10:54:28+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '34' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000285s ]
+[ 2013-12-19T10:54:28+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '35' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000277s ]
+[ 2013-12-19T10:54:28+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '36' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000275s ]
+[ 2013-12-19T10:54:28+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '37' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000287s ]
+[ 2013-12-19T10:54:28+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '38' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000272s ]
+[ 2013-12-19T10:54:28+08:00 ] /skybroad/index.php/Home | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001698s ]
+[ 2013-12-19T10:54:28+08:00 ] /skybroad/index.php/Home | SQL: SHOW COLUMNS FROM `m_domain` [ RunTime:0.001140s ]
+[ 2013-12-19T10:54:28+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_domain` WHERE target != 'PC' [ RunTime:0.000452s ]
+[ 2013-12-19T10:54:28+08:00 ] /skybroad/index.php/Home | NOTIC: [8] Undefined variable: domain HomeAction.class.php 第 22 行.
+[ 2013-12-19T10:54:28+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_domain` WHERE target = 'PC' [ RunTime:0.000279s ]
+[ 2013-12-19T10:54:28+08:00 ] /skybroad/index.php/Home | NOTIC: [8] Undefined variable: domainPC HomeAction.class.php 第 27 行.
+[ 2013-12-19T10:54:28+08:00 ] /skybroad/index.php/Home | NOTIC: [8] Undefined offset:  1 HomeAction.class.php 第 27 行.
+[ 2013-12-19T10:54:28+08:00 ] /skybroad/index.php/Home | NOTIC: [2] Missing argument 2 for HomeAction::assignSystem(), called in D:\www\m.5izh.com\skybroad\App\Lib\Action\HomeAction.class.php on line 44 and defined HomeAction.class.php 第 54 行.
+[ 2013-12-19T10:54:28+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_system` WHERE ( `lang` = 'zh-cn' ) LIMIT 1  [ RunTime:0.000298s ]
+[ 2013-12-19T10:54:37+08:00 ] /skybroad/index.php/home | SQL: SHOW COLUMNS FROM `m_part` [ RunTime:0.001112s ]
+[ 2013-12-19T10:54:37+08:00 ] /skybroad/index.php/home | SQL: SELECT * FROM `m_part` WHERE ( `lang` = 'zh-cn' ) AND ( `is_publish` = '1' ) AND ( `pid` = 0 ) ORDER BY orderNum desc [ RunTime:0.000362s ]
+[ 2013-12-19T10:54:37+08:00 ] /skybroad/index.php/home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '31' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000253s ]
+[ 2013-12-19T10:54:37+08:00 ] /skybroad/index.php/home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '32' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000239s ]
+[ 2013-12-19T10:54:37+08:00 ] /skybroad/index.php/home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '33' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000249s ]
+[ 2013-12-19T10:54:37+08:00 ] /skybroad/index.php/home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '34' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000229s ]
+[ 2013-12-19T10:54:37+08:00 ] /skybroad/index.php/home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '35' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000228s ]
+[ 2013-12-19T10:54:37+08:00 ] /skybroad/index.php/home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '36' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000224s ]
+[ 2013-12-19T10:54:37+08:00 ] /skybroad/index.php/home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '37' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000231s ]
+[ 2013-12-19T10:54:37+08:00 ] /skybroad/index.php/home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '38' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000226s ]
+[ 2013-12-19T10:54:37+08:00 ] /skybroad/index.php/home | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001299s ]
+[ 2013-12-19T10:54:37+08:00 ] /skybroad/index.php/home | SQL: SHOW COLUMNS FROM `m_domain` [ RunTime:0.000809s ]
+[ 2013-12-19T10:54:37+08:00 ] /skybroad/index.php/home | SQL: SELECT * FROM `m_domain` WHERE target != 'PC' [ RunTime:0.000200s ]
+[ 2013-12-19T10:54:37+08:00 ] /skybroad/index.php/home | NOTIC: [8] Undefined variable: domain HomeAction.class.php 第 22 行.
+[ 2013-12-19T10:54:37+08:00 ] /skybroad/index.php/home | SQL: SELECT * FROM `m_domain` WHERE target = 'PC' [ RunTime:0.000197s ]
+[ 2013-12-19T10:54:37+08:00 ] /skybroad/index.php/home | NOTIC: [8] Undefined variable: domainPC HomeAction.class.php 第 27 行.
+[ 2013-12-19T10:54:37+08:00 ] /skybroad/index.php/home | NOTIC: [8] Undefined offset:  1 HomeAction.class.php 第 27 行.
+[ 2013-12-19T10:54:37+08:00 ] /skybroad/index.php/home | NOTIC: [2] Missing argument 2 for HomeAction::assignSystem(), called in D:\www\m.5izh.com\skybroad\App\Lib\Action\HomeAction.class.php on line 44 and defined HomeAction.class.php 第 54 行.
+[ 2013-12-19T10:54:37+08:00 ] /skybroad/index.php/home | SQL: SELECT * FROM `m_system` WHERE ( `lang` = 'zh-cn' ) LIMIT 1  [ RunTime:0.000231s ]
+[ 2013-12-19T11:01:09+08:00 ] /skybroad/ | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001446s ]
+[ 2013-12-19T11:01:09+08:00 ] /skybroad/ | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000249s ]
+[ 2013-12-19T11:01:09+08:00 ] /skybroad/ | SQL: SHOW COLUMNS FROM `m_advert` [ RunTime:0.001411s ]
+[ 2013-12-19T11:01:09+08:00 ] /skybroad/ | SQL: SELECT * FROM `m_advert` ORDER BY id asc LIMIT 5  [ RunTime:0.000289s ]
+[ 2013-12-19T11:01:28+08:00 ] /skybroad/index.php/Admin/Index/index.html | SQL: SHOW COLUMNS FROM `m_modelconfig` [ RunTime:0.001319s ]
+[ 2013-12-19T11:01:28+08:00 ] /skybroad/index.php/Admin/Index/index.html | SQL: SELECT * FROM `m_modelconfig` WHERE is_sel=1 ORDER BY id asc [ RunTime:0.000352s ]
+[ 2013-12-19T11:01:28+08:00 ] /skybroad/index.php/Admin/Index/index.html | NOTIC: [8] Undefined index:  lang cbf9e7b8bf66a95a7a86d8ee0c98b98a.php 第 45 行.
+[ 2013-12-19T11:01:28+08:00 ] /skybroad/index.php/Admin/Index/index.html | NOTIC: [8] Undefined variable: langList cbf9e7b8bf66a95a7a86d8ee0c98b98a.php 第 138 行.
+[ 2013-12-19T11:01:28+08:00 ] /skybroad/index.php/Admin/Index/index.html | NOTIC: [8] Undefined variable: default_group cbf9e7b8bf66a95a7a86d8ee0c98b98a.php 第 155 行.
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SHOW COLUMNS FROM `m_news` [ RunTime:0.001656s ]
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SHOW COLUMNS FROM `m_goods` [ RunTime:0.001415s ]
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SHOW COLUMNS FROM `m_guestbook` [ RunTime:0.001470s ]
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SHOW COLUMNS FROM `m_advert` [ RunTime:0.001184s ]
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SHOW COLUMNS FROM `m_link` [ RunTime:0.001270s ]
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SHOW COLUMNS FROM `m_download` [ RunTime:0.001568s ]
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SHOW COLUMNS FROM `m_job` [ RunTime:0.001331s ]
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SHOW COLUMNS FROM `m_job_resume` [ RunTime:0.001619s ]
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.001600s ]
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SHOW COLUMNS FROM `m_custom` [ RunTime:0.001457s ]
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT COUNT(*) AS tp_count FROM `m_news` LIMIT 1  [ RunTime:0.000256s ]
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT COUNT(*) AS tp_count FROM `m_goods` LIMIT 1  [ RunTime:0.000198s ]
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT COUNT(*) AS tp_count FROM `m_guestbook` LIMIT 1  [ RunTime:0.000196s ]
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT COUNT(*) AS tp_count FROM `m_guestbook` WHERE ( `read` = 0 ) LIMIT 1  [ RunTime:0.000274s ]
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT COUNT(*) AS tp_count FROM `m_advert` LIMIT 1  [ RunTime:0.000153s ]
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT COUNT(*) AS tp_count FROM `m_link` LIMIT 1  [ RunTime:0.000147s ]
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT COUNT(*) AS tp_count FROM `m_download` LIMIT 1  [ RunTime:0.000144s ]
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT COUNT(*) AS tp_count FROM `m_job` LIMIT 1  [ RunTime:0.000141s ]
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT COUNT(*) AS tp_count FROM `m_job_resume` LIMIT 1  [ RunTime:0.000143s ]
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT COUNT(*) AS tp_count FROM `m_member` LIMIT 1  [ RunTime:0.000140s ]
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT COUNT(*) AS tp_count FROM `m_member` WHERE (FROM_UNIXTIME(create_time,'%Y-%m-%d')='2013-12-19') LIMIT 1  [ RunTime:0.000174s ]
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT * FROM `m_custom` WHERE ( `id` = 1 ) LIMIT 1  [ RunTime:0.000206s ]
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SHOW COLUMNS FROM `m_modelconfig` [ RunTime:0.001158s ]
+[ 2013-12-19T11:01:30+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT * FROM `m_modelconfig` WHERE is_sel=1 ORDER BY id asc [ RunTime:0.000287s ]
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined index:  mid SystemAction.class.php 第 12 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001453s ]
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000255s ]
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Use of undefined constant SCRIPT_FILENAME - assumed 'SCRIPT_FILENAME' SystemAction.class.php 第 64 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:31+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:01:32+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:07+08:00 ] /skybroad/index.php/Admin/Index/index.html | SQL: SHOW COLUMNS FROM `m_modelconfig` [ RunTime:0.001079s ]
+[ 2013-12-19T11:06:07+08:00 ] /skybroad/index.php/Admin/Index/index.html | SQL: SELECT * FROM `m_modelconfig` WHERE is_sel=1 ORDER BY id asc [ RunTime:0.000270s ]
+[ 2013-12-19T11:06:07+08:00 ] /skybroad/index.php/Admin/Index/index.html | NOTIC: [8] Undefined index:  lang cbf9e7b8bf66a95a7a86d8ee0c98b98a.php 第 45 行.
+[ 2013-12-19T11:06:07+08:00 ] /skybroad/index.php/Admin/Index/index.html | NOTIC: [8] Undefined variable: langList cbf9e7b8bf66a95a7a86d8ee0c98b98a.php 第 138 行.
+[ 2013-12-19T11:06:07+08:00 ] /skybroad/index.php/Admin/Index/index.html | NOTIC: [8] Undefined variable: default_group cbf9e7b8bf66a95a7a86d8ee0c98b98a.php 第 155 行.
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SHOW COLUMNS FROM `m_news` [ RunTime:0.001312s ]
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SHOW COLUMNS FROM `m_goods` [ RunTime:0.001111s ]
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SHOW COLUMNS FROM `m_guestbook` [ RunTime:0.001056s ]
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SHOW COLUMNS FROM `m_advert` [ RunTime:0.001117s ]
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SHOW COLUMNS FROM `m_link` [ RunTime:0.000931s ]
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SHOW COLUMNS FROM `m_download` [ RunTime:0.001117s ]
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SHOW COLUMNS FROM `m_job` [ RunTime:0.001079s ]
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SHOW COLUMNS FROM `m_job_resume` [ RunTime:0.000902s ]
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SHOW COLUMNS FROM `m_member` [ RunTime:0.000933s ]
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SHOW COLUMNS FROM `m_custom` [ RunTime:0.001113s ]
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT COUNT(*) AS tp_count FROM `m_news` LIMIT 1  [ RunTime:0.000237s ]
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT COUNT(*) AS tp_count FROM `m_goods` LIMIT 1  [ RunTime:0.000156s ]
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT COUNT(*) AS tp_count FROM `m_guestbook` LIMIT 1  [ RunTime:0.000163s ]
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT COUNT(*) AS tp_count FROM `m_guestbook` WHERE ( `read` = 0 ) LIMIT 1  [ RunTime:0.000195s ]
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT COUNT(*) AS tp_count FROM `m_advert` LIMIT 1  [ RunTime:0.000165s ]
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT COUNT(*) AS tp_count FROM `m_link` LIMIT 1  [ RunTime:0.000145s ]
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT COUNT(*) AS tp_count FROM `m_download` LIMIT 1  [ RunTime:0.000143s ]
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT COUNT(*) AS tp_count FROM `m_job` LIMIT 1  [ RunTime:0.000210s ]
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT COUNT(*) AS tp_count FROM `m_job_resume` LIMIT 1  [ RunTime:0.000284s ]
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT COUNT(*) AS tp_count FROM `m_member` LIMIT 1  [ RunTime:0.000165s ]
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT COUNT(*) AS tp_count FROM `m_member` WHERE (FROM_UNIXTIME(create_time,'%Y-%m-%d')='2013-12-19') LIMIT 1  [ RunTime:0.000210s ]
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT * FROM `m_custom` WHERE ( `id` = 1 ) LIMIT 1  [ RunTime:0.000235s ]
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SHOW COLUMNS FROM `m_modelconfig` [ RunTime:0.001073s ]
+[ 2013-12-19T11:06:10+08:00 ] /skybroad/index.php/Admin/Index/main | SQL: SELECT * FROM `m_modelconfig` WHERE is_sel=1 ORDER BY id asc [ RunTime:0.000271s ]
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined index:  mid SystemAction.class.php 第 12 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001481s ]
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000247s ]
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Use of undefined constant SCRIPT_FILENAME - assumed 'SCRIPT_FILENAME' SystemAction.class.php 第 64 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:12+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:13+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 80 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 73 行.
+[ 2013-12-19T11:06:14+08:00 ] /skybroad/index.php/Admin/System/getSpaceSize | NOTIC: [8] Undefined variable: sizeResult SystemAction.class.php 第 75 行.
+[ 2013-12-19T11:27:29+08:00 ] /skybroad/ | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001776s ]
+[ 2013-12-19T11:27:29+08:00 ] /skybroad/ | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000284s ]
+[ 2013-12-19T11:27:29+08:00 ] /skybroad/ | SQL: SHOW COLUMNS FROM `m_advert` [ RunTime:0.001337s ]
+[ 2013-12-19T11:27:29+08:00 ] /skybroad/ | SQL: SELECT * FROM `m_advert` ORDER BY id asc LIMIT 5  [ RunTime:0.000292s ]
+[ 2013-12-19T11:27:50+08:00 ] /skybroad/ | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001965s ]
+[ 2013-12-19T11:27:50+08:00 ] /skybroad/ | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000299s ]
+[ 2013-12-19T11:27:50+08:00 ] /skybroad/ | SQL: SHOW COLUMNS FROM `m_advert` [ RunTime:0.001547s ]
+[ 2013-12-19T11:27:50+08:00 ] /skybroad/ | SQL: SELECT * FROM `m_advert` ORDER BY id asc LIMIT 5  [ RunTime:0.000285s ]
+[ 2013-12-19T11:27:55+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387423672640 | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001490s ]
+[ 2013-12-19T11:27:55+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387423672640 | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000266s ]
+[ 2013-12-19T11:27:55+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387423672640 | SQL: SHOW COLUMNS FROM `m_advert` [ RunTime:0.001493s ]
+[ 2013-12-19T11:27:55+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387423672640 | SQL: SELECT * FROM `m_advert` ORDER BY id asc LIMIT 5  [ RunTime:0.000334s ]
+[ 2013-12-19T11:27:55+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387423672640 | NOTIC: [8] Undefined variable: str AjaxloadAction.class.php 第 65 行.
+[ 2013-12-19T11:28:09+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387423764579 | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.002264s ]
+[ 2013-12-19T11:28:09+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387423764579 | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000259s ]
+[ 2013-12-19T11:28:09+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387423764579 | SQL: SHOW COLUMNS FROM `m_advert` [ RunTime:0.002277s ]
+[ 2013-12-19T11:28:09+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387423764579 | SQL: SELECT * FROM `m_advert` ORDER BY id asc LIMIT 5  [ RunTime:0.000295s ]
+[ 2013-12-19T11:28:09+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387423764579 | NOTIC: [8] Undefined variable: str AjaxloadAction.class.php 第 65 行.
+[ 2013-12-19T11:28:21+08:00 ] /skybroad/ | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001391s ]
+[ 2013-12-19T11:28:21+08:00 ] /skybroad/ | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000247s ]
+[ 2013-12-19T11:28:21+08:00 ] /skybroad/ | SQL: SHOW COLUMNS FROM `m_advert` [ RunTime:0.001097s ]
+[ 2013-12-19T11:28:22+08:00 ] /skybroad/ | SQL: SELECT * FROM `m_advert` ORDER BY id asc LIMIT 5  [ RunTime:0.000265s ]
+[ 2013-12-19T11:28:23+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387423707267 | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001396s ]
+[ 2013-12-19T11:28:23+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387423707267 | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000264s ]
+[ 2013-12-19T11:28:23+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387423707267 | SQL: SHOW COLUMNS FROM `m_advert` [ RunTime:0.001109s ]
+[ 2013-12-19T11:28:23+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387423707267 | SQL: SELECT * FROM `m_advert` ORDER BY id asc LIMIT 5  [ RunTime:0.000273s ]
+[ 2013-12-19T11:28:23+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387423707267 | NOTIC: [8] Undefined variable: str AjaxloadAction.class.php 第 65 行.
+[ 2013-12-19T11:28:29+08:00 ] /skybroad/index.php/Mobile/About | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001385s ]
+[ 2013-12-19T11:28:29+08:00 ] /skybroad/index.php/Mobile/About | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000260s ]
+[ 2013-12-19T11:28:29+08:00 ] /skybroad/index.php/Mobile/About | SQL: SHOW COLUMNS FROM `m_news` [ RunTime:0.001388s ]
+[ 2013-12-19T11:28:29+08:00 ] /skybroad/index.php/Mobile/About | SQL: SELECT * FROM `m_news` WHERE category_id=110 LIMIT 1  [ RunTime:0.000360s ]
+[ 2013-12-19T11:28:33+08:00 ] /skybroad/index.php/Mobile | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001460s ]
+[ 2013-12-19T11:28:33+08:00 ] /skybroad/index.php/Mobile | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000269s ]
+[ 2013-12-19T11:28:33+08:00 ] /skybroad/index.php/Mobile | SQL: SHOW COLUMNS FROM `m_advert` [ RunTime:0.001132s ]
+[ 2013-12-19T11:28:33+08:00 ] /skybroad/index.php/Mobile | SQL: SELECT * FROM `m_advert` ORDER BY id asc LIMIT 5  [ RunTime:0.000308s ]
+[ 2013-12-19T11:28:33+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387423717834 | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001455s ]
+[ 2013-12-19T11:28:33+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387423717834 | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000282s ]
+[ 2013-12-19T11:28:33+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387423717834 | SQL: SHOW COLUMNS FROM `m_advert` [ RunTime:0.001166s ]
+[ 2013-12-19T11:28:33+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387423717834 | SQL: SELECT * FROM `m_advert` ORDER BY id asc LIMIT 5  [ RunTime:0.000284s ]
+[ 2013-12-19T11:28:33+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387423717834 | NOTIC: [8] Undefined variable: str AjaxloadAction.class.php 第 65 行.
+[ 2013-12-19T11:28:55+08:00 ] /skybroad/index.php/Mobile/About | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001409s ]
+[ 2013-12-19T11:28:55+08:00 ] /skybroad/index.php/Mobile/About | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000243s ]
+[ 2013-12-19T11:28:55+08:00 ] /skybroad/index.php/Mobile/About | SQL: SHOW COLUMNS FROM `m_news` [ RunTime:0.001069s ]
+[ 2013-12-19T11:28:55+08:00 ] /skybroad/index.php/Mobile/About | SQL: SELECT * FROM `m_news` WHERE category_id=110 LIMIT 1  [ RunTime:0.000324s ]
+[ 2013-12-19T11:36:48+08:00 ] /skybroad/ | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001378s ]
+[ 2013-12-19T11:36:48+08:00 ] /skybroad/ | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000246s ]
+[ 2013-12-19T11:36:48+08:00 ] /skybroad/ | SQL: SHOW COLUMNS FROM `m_advert` [ RunTime:0.001100s ]
+[ 2013-12-19T11:36:48+08:00 ] /skybroad/ | SQL: SELECT * FROM `m_advert` ORDER BY id asc LIMIT 5  [ RunTime:0.000259s ]
+[ 2013-12-19T11:36:52+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387424209545 | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001409s ]
+[ 2013-12-19T11:36:52+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387424209545 | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000265s ]
+[ 2013-12-19T11:36:52+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387424209545 | SQL: SHOW COLUMNS FROM `m_advert` [ RunTime:0.001105s ]
+[ 2013-12-19T11:36:52+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387424209545 | SQL: SELECT * FROM `m_advert` ORDER BY id asc LIMIT 5  [ RunTime:0.000264s ]
+[ 2013-12-19T11:36:52+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1387424209545 | NOTIC: [8] Undefined variable: str AjaxloadAction.class.php 第 65 行.
+[ 2013-12-19T15:17:47+08:00 ] /skybroad/index.php/Home | SQL: SHOW COLUMNS FROM `m_part` [ RunTime:0.001510s ]
+[ 2013-12-19T15:17:47+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_part` WHERE ( `lang` = 'zh-cn' ) AND ( `is_publish` = '1' ) AND ( `pid` = 0 ) ORDER BY orderNum desc [ RunTime:0.000407s ]
+[ 2013-12-19T15:17:47+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '31' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000267s ]
+[ 2013-12-19T15:17:47+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '32' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000251s ]
+[ 2013-12-19T15:17:47+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '33' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000331s ]
+[ 2013-12-19T15:17:47+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '34' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000258s ]
+[ 2013-12-19T15:17:47+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '35' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000248s ]
+[ 2013-12-19T15:17:47+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '36' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000247s ]
+[ 2013-12-19T15:17:47+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '37' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000251s ]
+[ 2013-12-19T15:17:47+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_part` WHERE ( `pid` = '38' ) AND ( `is_publish` = 1 ) ORDER BY orderNum desc [ RunTime:0.000243s ]
+[ 2013-12-19T15:17:47+08:00 ] /skybroad/index.php/Home | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.001580s ]
+[ 2013-12-19T15:17:47+08:00 ] /skybroad/index.php/Home | SQL: SHOW COLUMNS FROM `m_domain` [ RunTime:0.001069s ]
+[ 2013-12-19T15:17:47+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_domain` WHERE target != 'PC' [ RunTime:0.000227s ]
+[ 2013-12-19T15:17:47+08:00 ] /skybroad/index.php/Home | NOTIC: [8] Undefined variable: domain HomeAction.class.php 第 22 行.
+[ 2013-12-19T15:17:47+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_domain` WHERE target = 'PC' [ RunTime:0.000188s ]
+[ 2013-12-19T15:17:47+08:00 ] /skybroad/index.php/Home | NOTIC: [8] Undefined variable: domainPC HomeAction.class.php 第 27 行.
+[ 2013-12-19T15:17:47+08:00 ] /skybroad/index.php/Home | NOTIC: [8] Undefined offset:  1 HomeAction.class.php 第 27 行.
+[ 2013-12-19T15:17:47+08:00 ] /skybroad/index.php/Home | NOTIC: [2] Missing argument 2 for HomeAction::assignSystem(), called in D:\www\m.5izh.com\skybroad\App\Lib\Action\HomeAction.class.php on line 44 and defined HomeAction.class.php 第 54 行.
+[ 2013-12-19T15:17:47+08:00 ] /skybroad/index.php/Home | SQL: SELECT * FROM `m_system` WHERE ( `lang` = 'zh-cn' ) LIMIT 1  [ RunTime:0.000248s ]

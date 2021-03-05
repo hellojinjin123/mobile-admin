@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>网络营销编辑</title>
+
+<layout name="Inc:edit_page" cache="0" />
+
+<script>
+
+function langCallBeforeFunction(lang) {
+	if(lang=='mobile') {
+		window.location.href = '__APP__/Admin/Market/edit/lang/mobile/cid/{.cid}';
+		return true;
+	} else {
+		return false;
+	}
+}
+</script>
+
+</head>
+<body>
+<div class="nav-site">{~getNavSite($c_root,$_GET['cid'])} > 编辑信息</div>
+<form action="__APP__/Admin/Market/<?php echo $obj==null?'add':'update'; ?>" method="post" enctype="multipart/form-data" class="form">  
+<input type="hidden" name="id" value="{$obj.id}">
+<input type="hidden" name="mid" value="{$_GET['mid']}">
+   <fieldset>
+       <ul class="align-list">
+       		
+		   
+         	<li>
+               <label>营销分类</label>
+               <select name="one_category_id">
+	           	<option value="">请选择</option>
+	           	<php> $category = getAdverCatelist($_GET['mid']); </php>
+	           	<volist name="category" id="vo">
+	           	<option value="{$vo.id}" <php> if($vo['id']==$obj['category_id']){ echo 'selected'; }elseif($vo['id']==$_GET['cid']){ echo 'selected'; } </php> >{$vo.title} </option>
+	           	</volist>
+	           	</select>
+           </li>
+			
+           <li>
+               <label>标题</label>
+               <input type="text" id="title" name="title" value="{$obj.title}" class="type-text">
+           </li>
+            <li>
+               <label>联系人</label>
+               <input type="text" id="linkman" name="linkman" value="{$obj.linkman}" class="type-text">
+           </li>
+           <li>
+               <label>电子邮件</label>
+               <input type="text" id="email" name="email" value="{$obj.email}" class="type-text">
+           </li>
+           <li>
+               <label>联系电话</label>
+               <input type="text" id="tel" name="tel" value="{$obj.tel}" class="type-text">
+           </li>
+           <li>
+               <label>传真</label>
+               <input type="text" id="fax" name="fax" value="{$obj.fax}" class="type-text">
+           </li>
+		   <li>
+               <label>邮编</label>
+               <input type="text" id="postcode" name="postcode" value="{$obj.postcode}" class="type-text">
+           </li>
+           <li>
+               <label>地址</label>
+               <input type="text" id="address" name="address" value="{$obj.address}" class="type-text">
+           </li>
+           <li>
+               <label>地图代码</label>
+                
+               <textarea name="mapcode" id="mapcode" rows="3" cols="60" class="type-text">{$obj.mapcode}</textarea>
+           </li>
+		   <li>
+               <label>乘公交车</label>
+               <textarea name="traffic1" id="traffic1" rows="3" cols="60" class="type-text">{$obj.traffic1}</textarea>
+           </li>
+		   <li>
+               <label>乘出租车</label>
+               <textarea name="traffic2" id="traffic2" rows="3" cols="60" class="type-text">{$obj.traffic2}</textarea>
+           </li>
+           <li>
+               <label>描述</label>
+               <textarea name="content" id="content" rows="3" cols="60" class="type-text">{$obj.content}</textarea>
+           </li>
+           <li>
+               <label>封面</label>
+               <?php if( !empty($obj['image']) ) { ?>
+               <span id="span_image">
+			   <img alt="" align="middle" height="80" vspace="5" src="<?php echo __PUBLIC__.'/data/upload/images/market/s_'.$obj['image']; ?>">
+           	   <a href="javascript:void(0)" id="delete_image" style="color:red;text-decoration:underline;">删除封面</a>&nbsp;&nbsp;&nbsp;&nbsp;
+           	   </span>
+           	   <?php } ?>
+			    <input type="file" name="image">
+			    宽：<input name="imgwidth" value="300" style="width:50px;">&nbsp;&nbsp;
+			    高：<input name="imgheight" value="300" style="width:50px;"> <span style="color:#999;">(列表显示尺寸)</span>
+           </li>
+           </if>
+           <li>
+               <label>现在发布<a href="#" class="issue" title="在网站前台显示">?</a></label>
+                <input type="checkbox" id="publish" name="publish"  onclick="set_publish()" <?php if($obj['is_publish']==1){echo 'checked';}?> >
+               <input type="hidden" id="is_publish" name="is_publish" value="{$obj.is_publish}">
+           </li>
+           <li>
+               <label></label>
+               <input type="submit" value="确定并保存" name="save" class="button button-green" onclick="return check()"/>
+               <input type="reset" value="重置" class="button button-red" />
+           	 	<input type="button" value="返回列表" onclick="javascript:history.go(-1);" class="button" />
+            </li>
+        </ul>
+    </fieldset>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<div class="nav-site">{~getNavSite($c_root,$_GET['cid'])} > 编辑信息</div>
+<form action="__APP__/Admin/<?php echo MODULE_NAME; ?>/<?php echo $obj==null?'add':'update'; ?>" method="post" enctype="multipart/form-data" class="form">  
+<input type="hidden" id="id" name="id" value="{$obj.id}">
+<input type="hidden" id="image" name="image" value="{$obj.image}">
+<empty name="oneCategoryList">
+<input type="hidden" id="one_category_id" name="one_category_id" value="<?php echo $_GET['cid']; ?>">
+</empty>
+<?php if( !isMultilingual($custom) ) { ?>
+<input type="hidden" name="lang" value="{$obj.lang}">
+<?php } ?>
+<?php if( $_GET['lang']=='mobile' ) { ?>
+<input type="hidden" name="lang" value="{.lang}">
+<?php } ?>
+   <fieldset>
+       <ul class="align-list">
+       		<notempty name="oneCategoryList">
+       		{~isCategory($oneCategoryList,$twoCategoryList,$threeCategoryList)}
+			</notempty>
+           <li id="li_icon">
+               <label>图标</label>
+               <a href="#" id="address"><img src="__ADMIN__/Public/imgs/mobile/address.png" align="absmiddle" width="35" alt=""></a>
+			   <a href="#" id="mail"><img src="__ADMIN__/Public/imgs/mobile/mail.png" align="absmiddle" width="35" alt=""></a>
+			   <a href="#" id="phone"><img src="__ADMIN__/Public/imgs/mobile/phone.png" align="absmiddle" width="35" alt=""></a>
+			   <a href="#" id="qq_weibo"><img src="__ADMIN__/Public/imgs/mobile/qq_weibo.png" align="absmiddle" width="35" alt=""></a>
+			   <a href="#" id="sina_weibo"><img src="__ADMIN__/Public/imgs/mobile/sina_weibo.png" align="absmiddle" width="35" alt=""></a>
+			   <a href="#" id="tel"><img src="__ADMIN__/Public/imgs/mobile/tel.png" align="absmiddle" width="35" alt=""></a>
+               <a href="#" id="dimensional"><img src="__ADMIN__/Public/imgs/mobile/mail.png" align="absmiddle" title="生成二维码" width="35" alt=""></a>
+           </li>
+		   <div id="contact_box">
+           <li>
+               <label>标题</label>
+               <input type="text" id="title" name="title" value="{$obj.title}" class="type-text">
+           </li>
+           <li>
+               <label>内容</label>
+               <textarea id="content" name="content" cols="100" rows="3">{$obj.content}</textarea>
+           </li>
+		   <div id="traffic_box">
+		   <li>
+               <label>乘公交车</label>
+               <textarea name="traffic1" id="traffic1" rows="3" cols="60" class="type-text">{$obj.traffic1}</textarea>
+           </li>
+		   <li>
+               <label>乘出租车</label>
+               <textarea name="traffic2" id="traffic2" rows="3" cols="60" class="type-text">{$obj.traffic2}</textarea>
+           </li>
+		   </div>
+		   </div>
+           <div id="two_dimensional" style="display:none">
+           		<input type="hidden" name="url" value="/Index/downLoad" />
+                <li> <label>尺寸</label>
+                <input type="text" id="size" name="tag" value="{$obj.tag}"  />宽x高(例:150x150)</li>
+                <li>
+                	<label>您的二维码</label>
+                    <input type="button" id="creatDimen" value="查看二维码" class="button" />
+                </li>
+                <li>
+                	<div id="dimenImg">
+                    </div>
+                </li>
+           </div>
+		   <div id="map_point_box" style="display:none;">
+		   <hr>
+		   <li>
+               <label>您的办公地点</label>
+               <input type="text" id="office_location" name="office_location" value="{$obj.office_location}" class="type-text" style="width:500px;">
+			   <input type="button" id="map_point" value="获取地图位置" style="padding:8px;">
+           </li>
+		   <li>
+               <label>X：</label>
+               <input type="text" id="point_x" name="point_x" value="{$obj.point_x}" class="type-text" style="width:500px;"><br>
+			   <label>Y：</label>
+               <input type="text" id="point_y" name="point_y" value="{$obj.point_y}" class="type-text" style="width:500px;">
+           </li>
+		   <li>
+		   	   <label></label>
+			   <div style="width:76%;height:340px;border:1px solid gray;margin-left: 140px;" id="container"></div>
+		   </li>
+		   </div>
+		   <input type="radio" id="lang" name="lang" value="mobile" checked="checked" style="display:none;">
+		   <li>
+               <label>现在发布<a href="#" class="issue" title="在网站前台显示">?</a></label>
+               <input type="checkbox" id="is_publish" name="is_publish" value="1">
+           </li>
+           <li>
+               <label></label>
+               <input type="submit" value="确定并保存" name="save" class="button button-green" />
+               <input type="reset" value="重置" class="button button-red" />
+               <input type="button" value="返回列表" onclick="javascript:history.go(-1);" class="button" />
+            </li>
+        </ul>
+    </fieldset>
+</form>
+
+<script>
+$(function(){
+	$("#creatDimen").click(function(){
+		$size = $("#size").val();
+		if($size == '')
+		{
+			alert('必须填写尺寸');
+			return false;
+		}
+		$url = $("input[name=url]").val();
+		$("#dimenImg").html('<img src="https://chart.googleapis.com/chart?cht=qr&chs='+ $size +'&choe=UTF-8&chld=L|4&chl=http://'+ window.location.host + "__APP__" + $url +'"/>');
+	})
+	if('{.id}'=='') {
+		$("input[name=is_publish]").attr("checked",true);
+	}
+	
+	$("input[name=is_publish][value={$obj.is_publish}]").attr("checked",true);
+	
+	$('#{$obj.image}').find('img').css('border','2px solid red');
+	
+	$('#li_icon a').click(function(){
+		if($(this).attr('id')=='address' || $(this).css('border')=='2px solid red' ) {
+			$('#traffic_box').hide();
+			$('#two_dimensional').hide();
+			$('#map_point_box').show();
+		} else if($(this).attr('id')=='dimensional' || $(this).css('border')=='2px solid red')
+		{
+			$('#traffic_box').hide();
+			$('#map_point_box').hide();
+			$('#two_dimensional').show();
+		}		
+		 else {
+			$('#traffic_box').show();
+			$('#map_point_box').hide();
+			$('#two_dimensional').hide();
+		}
+		
+		$(this).siblings().find('img').css('border','');
+		$(this).find('img').css('border','2px solid red');
+		$('#image').val($(this).attr('id'));
+	});
+	
+	$('#{$obj.image}').trigger('click');
+
+	$('#map_point').click(function(){
+		window.searchBmap($('#office_location').val());
+	});
+
+	var office_location='{$obj.office_location}';
+	if(office_location) {
+		window.searchBmap(office_location);
+	}
+
+});
+
+function searchBmap(officeLocation) {
+	var map = new BMap.Map("container");
+	map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);
+	// 创建地址解析器实例
+	var myGeo = new BMap.Geocoder();
+	// 将地址解析结果显示在地图上,并调整地图视野
+	myGeo.getPoint(officeLocation, function(point){
+	  if (point) {
+	    map.centerAndZoom(point, 16);
+	    map.addOverlay(new BMap.Marker(point));
+
+		$('#point_x').val(map.getCenter().lng);
+		$('#point_y').val(map.getCenter().lat);
+	  }
+	}, "");
+}
+</script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.3"></script>

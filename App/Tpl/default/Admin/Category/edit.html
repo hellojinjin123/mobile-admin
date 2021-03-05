@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>编辑分类</title>
+
+<link rel="stylesheet" type="text/css" href="__ADMIN__/Public/css/base.css" />
+<script src="__ADMIN__/Public/js/jquery-1.7.1.min.js"></script>
+
+<script src="__ADMIN__/Public/js/base.js"></script>
+
+
+
+</head>
+<body>
+
+<div class="nav-site"> > 编辑分类</div>
+<form action="__APP__/Admin/Category/categoryManage" method="post" enctype="multipart/form-data" class="form"> 
+                        
+  <fieldset>
+      <ul class="align-list">
+      	   <li>
+  	 		  <div id="msg_category" style="display:none;line-height:30px;text-align:center;height:30px;color:#fff;"></div>
+   		   </li>
+   		   
+   		   <php> if($act!='update'){ </php>
+   		   <li>
+            <label>上级分类</label>
+            <select name="fid" id="fid">
+           	  <option value="1" >无上级分类</option>
+           	  <volist name="categoryList" id="vo">
+           	  <option value="{$vo.id}" <php> if($vo['id']==$_GET['id']){ echo 'selected'; } </php> >{$vo.title}</option>
+           	  <php> $threecate = getCate($vo['id']); </php>
+           	    <volist name="threecate" id="vs">
+           	    
+           	    <option value="{$vs.id}" <php> if($vs['id']==$_GET['id']){ echo 'selected'; } </php> >&nbsp;&nbsp;|--{$vs.title}</option>
+           	    <php> $fourcate = getCate($vs['id']); </php>
+           	    <volist name="fourcate" id="v">
+           	     <option value="{$v.id}" <php> if($v['id']==$_GET['id']){ echo 'selected'; } </php> >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--{$v.title}</option>
+           	    </volist>
+           	    
+           	    </volist>
+           	 
+           	  </volist>
+            </select>
+           </li>
+           <php> } </php>
+           
+   		   <li>
+               <label>分类名称</label>
+               <input type="text" id="title" name="title" value="{$catedata.title}" class="type-text">
+           </li>
+           <li>
+       	 	<label>描述</label>
+       	 	<textarea id="description" name="description" cols="100" rows="3">{$catedata.description}</textarea>
+       	 	</li>
+       	 	
+       	   <li>
+               <label>显示方式</label>
+               <input type="radio" name="tpl_one" value="list" <php> if($catedata['tpl_one']=='list'){ echo 'checked'; }elseif(!isset($catedata)){ echo 'checked'; } </php> > 列表
+                <input type="radio" name="tpl_one" value="one" <php> if($catedata['tpl_one']=='one'){ echo 'checked'; } </php> > 单页
+           </li>
+           
+          
+           <li>
+               <label></label>
+               <input type="hidden" id="mid" name="model_id" value="{$_GET['mid']}">
+               <input type="hidden" id="id" name="id" value="{$catedata.id}">
+               <input type="hidden" id="act" name="act" value="{$act}">
+               <input type="submit" value="确定并保存" class="button button-green" />
+               <input type="reset" value="重置" class="button button-red" />
+			   <input type="button" value="返回列表" onclick="goToUrl('');" class="button" />
+            </li>
+        </ul>
+    </fieldset>
+</form>
+
+<!--  </if>-->
+
+</body>
+</html>

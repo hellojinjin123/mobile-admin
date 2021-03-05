@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<layout name="Inc:script" cache="0" />
+
+</head>
+
+<body>
+<div class="box">
+   <layout name="Inc:menu" cache="0" />
+  <div class="nav_b"><img src="__HOME__/images/index_03.jpg" width="1000" height="115" /></div>
+  <div class="main_s_det">
+<div class="main_left main_left_bg_03">
+        <div class="main_left_top"><img src="__HOME__/images/k_10.jpg" width="209" height="62" /></div>
+      <div class="main_left_main">
+         <ul>
+            <li><a href="__APP__/Guestbook" class="cur">> 在线留言</a></li>
+            <li><a href="__APP__/Guestbook/view.html">> 查看留言</a></li>
+        </ul>
+      </div>
+      <layout name="Inc:leftadd" cache="0" />
+
+</div>
+{:Y('List',array('style'=>'guestbook_page','model'=>'Guestbook','alias'=>'Guestbook/view','rowpage'=>5))}
+ 
+  </div>
+</div>
+<layout name="Inc:foot" cache="0" />
+</body>
+</html>

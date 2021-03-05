@@ -1,0 +1,38 @@
+<div class="nav">
+  <ul>
+  <!--
+    <li><a href="__APP__">首 页</a></li>
+    <li><a href="__APP__/About">关于柏历</a></li>
+    <li><a href="__APP__/Brand">品牌介绍</a></li>
+    <li><a href="__APP__/Product">产品展示</a></li>
+    <li><a href="__APP__/News">最新动态</a></li>
+    <li><a href="__APP__/Market">服务网点</a></li>
+    <li><a href="__APP__/Join/sustain.html">在线加盟</a></li>
+    <li><a href="__APP__/Guestbook">在线留言</a></li>
+    <li><a href="__APP__/Contact">联系我们</a></li> -->
+     <volist name="part" id="vo">
+     	<eq name="vo.now" value="$now">
+        		<li class="now"><a href="{$vo.url}">{$vo.title}</a>
+        	<else/>
+            	<li><a href="{$vo.url}">{$vo.title}</a>
+        </eq>
+        <notempty name="vo.next"><!-- 下一级 -->
+        		<ul>
+               <volist name="vo.next" id="tt"> 
+                     <li><a class="nextPart" href="{$tt.url}" onClick="addNav(false,{$tt.id})" va="{$tt.id}">{$tt.title}</a></li>
+               </volist>
+               </ul>
+        </notempty>
+        </li>
+    </volist>
+  </ul>
+</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".nav ul li").hover(function(){
+			$(this).find("ul").show(0);
+		}, function(){
+			$(this).find("ul").hide(0);
+		});
+	})
+</script>

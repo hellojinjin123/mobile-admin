@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<layout name="Inc:script" cache="0" />
+<script src="__PUBLIC__/js/jquery.form.js"></script>
+<script>
+$(document).ready(function() { 
+    $('#messageForm').ajaxForm({ 
+        beforeSubmit: function(formData, jqForm, options){
+
+    		if(document.getElementById('linkman').value==''){
+    			alert('请填写姓名');
+    			document.getElementById("linkman").focus();
+    			return false;
+    		}
+    		if(document.getElementById("email").value!=""){		
+  				var CheckMail = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;			
+  				if (!CheckMail.test(document.getElementById("email").value))
+  	  			{
+  	  			  alert("邮箱格式不正确");
+  	  			  document.getElementById("email").focus();
+  	  			  return false;
+  	  			}
+  			}
+    		if(document.getElementById('tel').value==''){
+    			alert('请填写您的联系电话');
+    			document.getElementById("tel").focus();
+    			return false;
+    		}
+    		if(document.getElementById('title').value==''){
+    			alert('请填写标题');
+    			document.getElementById("title").focus();
+    			return false;
+    		}
+    		if(document.getElementById('content').value==''){
+    			alert('请填写内容');
+    			document.getElementById("content").focus();
+    			return false;
+    		}
+    		if(document.getElementById('verify').value==''){
+    			alert('请填写验证码');
+    			document.getElementById("verify").focus();
+    			return false;
+    		}
+    		return true;
+        },
+        success: function(responseText, statusText, xhr, $form) {
+            if( responseText=='1' ) {
+				alert('留言成功,感谢您对我们的支持！');
+				window.location.href='__APP__';
+            } else if( responseText=='verify_error' ) {
+            	alert('验证码错误！');
+            } else {
+            	alert('留言失败,请稍候再试或直接联系我们！');
+            }
+        } 
+    }); 
+}); 
+
+function fleshVerify(type){ 
+	//重载验证码
+	var timenow = new Date().getTime();
+	if (type){
+		document.getElementById('verifyImg').src= '__APP__/Index/verify/adv/1/'+timenow;
+	}else{
+		document.getElementById('verifyImg').src= '__APP__/Index/verify/'+timenow;
+	}
+}
+</script>
+</head>
+
+<body>
+<div class="box">
+  <layout name="Inc:menu" cache="0" />
+  <div class="nav_b"><img src="__HOME__/images/index_03.jpg" width="1000" height="115" /></div>
+  <div class="main_s_det">
+<div class="main_left main_left_bg_03">
+        <div class="main_left_top"><img src="__HOME__/images/k_10.jpg" width="209" height="62" /></div>
+      <div class="main_left_main">
+         <ul>
+            <li><a href="__APP__/Guestbook" class="cur">> 在线留言</a></li>
+            <li><a href="__APP__/Guestbook/view.html">> 查看留言</a></li>
+        </ul>
+      </div>
+      <layout name="Inc:leftadd" cache="0" />
+
+</div>
+<div class="main_right"> 
+<div class="main_right_top">
+		 <script language="javascript" type="text/javascript">
+writeflashhtml("_swf=__HOME__/swf/xixi.swf", "_width=710", "_height=176" ,"_wmode=transparent");
+</script>
+</div>
+        <div class="main_right_main">
+          <div class="main_right_main_top"><img src="__HOME__/images/n_top.jpg" width="710" height="11" /></div>
+<div class="main_right_main_main">        
+  <div class="title">首页 > 在线留言</div>
+
+          <div class="news_list">
+      <form action="__APP__/Guestbook/guestbookSave" method="post" id="messageForm">
+        <table width="100%" height="455" border="0" cellpadding="0" cellspacing="8">
+          <tr>
+            <td width="20%" align="right"><span class="STYLE1 STYLE4">*</span> 留言类型：</td>
+            <td width="80%" align="left"><label>
+              {~selectCategoryOptions('','Guestbook/view')}
+            </label></td>
+          </tr>
+          <tr>
+            <td width="20%" align="right"><span class="STYLE1 STYLE4">*</span> 客户名称：</td>
+            <td width="80%" align="left"><label>
+              <input type="text" name="linkman" id="linkman" value="" size="30" />
+            </label></td>
+          </tr>
+          <tr>
+            <td align="right"><span class="STYLE1 STYLE4">*</span> 电子邮箱：</td>
+            <td align="left"><input type="text" name="email" id="email" value="" size="30" /></td>
+          </tr>
+          <tr>
+            <td align="right"><span class="STYLE1 STYLE4">*</span> 联系电话：</td>
+            <td height="18" align="left"><input type="text" name="tel" id="tel" value="" size="30" />
+      </td>
+          </tr>
+          <tr>
+            <td align="right">留言标题：</td>
+            <td align="left"><input type="text" name="title" id="title" value="" size="30" /></td>
+          </tr>
+          <tr>
+            <td align="right"><span class="STYLE1 STYLE4">*</span> 咨询内容：</td>
+            <td align="left"><label>
+            	<textarea name="content" id="content" cols="45" rows="8"></textarea>
+            </label></td>
+          </tr>
+          <tr>
+            <td align="right" valign="middle">验证码： &nbsp;</td>
+            <td width="417" align="left" valign="middle"><input name="verify" type="text" id="verify" style="width:50px;" /> <img id="verifyImg" src="__APP__/Index/verify" onClick="fleshVerify()" border="0" style="cursor:pointer" align="absmiddle"><span class="STYLE1"> *</span> 
+      如果看不清数字，请点图片刷新验证码    </span></td>
+          </tr>
+          <tr>
+            <td align="right">&nbsp;</td>
+            <td height="28" colspan="2" >
+        <input name="button" type="submit" id="button3" value="提 交"  />
+      <input type="reset" name="button2" id="button3" value="重 置"></td>
+          </tr>
+        </table>
+      </form>
+      </div>
+          </div>
+          <div class="main_right_main_bottom"><img src="__HOME__/images/n_bottom.jpg" width="710" height="11" /></div>
+        </div>
+    </div>
+      <div style="clear:both;"></div> 
+  </div>
+</div>
+<layout name="Inc:foot" cache="0" />
+</body>
+</html>

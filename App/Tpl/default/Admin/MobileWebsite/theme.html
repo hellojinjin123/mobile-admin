@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>手机主题</title>
+
+<link rel="stylesheet" type="text/css" href="__ADMIN__/Public/css/base.css" />
+<script src="__ADMIN__/Public/js/jquery-1.7.1.min.js"></script>
+<script src="__ADMIN__/Public/js/base.js"></script>
+
+<script>
+	$(function(){
+		
+		$('input[name=weibo_type][value=<?php echo $system["weibo_type"] ?>]').attr('checked',true);
+		if('{$system.id}'=='') {
+			$("input[name=mobile_theme][value=Mblue]").attr("checked",true);
+		} else {
+			$("input[name=mobile_theme][value=<?php echo $system['mobile_theme']; ?>]").attr("checked",true);
+		}
+		
+	});
+</script>
+
+<style>
+.mobile_theme_box td{padding-right:20px;}
+</style>
+
+</head>
+<body>
+<div class="nav-site">{~getNavSite($c_root,$_GET['cid'])}</div>
+<form action="__APP__/Admin/MobileWebsite/saveBase" method="post" enctype="multipart/form-data" class="form">
+<input type="hidden" name="lang" value="mobile">
+   <fieldset>
+       <ul class="align-list">
+           <li>
+               <label></label>
+			   <div style="margin-left:140px;margin-top: -25px;">
+			   <table border="0" class="mobile_theme_box">
+			   	<tr>
+			   		<td><img src="__ADMIN__/Public/imgs/demo1.jpg"></td>
+					<td><img src="__ADMIN__/Public/imgs/demo2.jpg"></td>
+                    <td><img src="__ADMIN__/Public/imgs/demo2.jpg"></td>
+                    <td><img src="__ADMIN__/Public/imgs/demo2.jpg"></td>
+			   	</tr>
+				<tr>
+			   		<td><input type="radio" name="mobile_theme" value="Mblue"> 服装风格</td>
+					<td><input type="radio" name="mobile_theme" value="Mred"> 数码风格</td>
+                    <td><input type="radio" name="mobile_theme" value="Mdemo3">清新风格</td>
+                    <td><input type="radio" name="mobile_theme" value="Mblue2"> 商务风格</td>
+                    <td><input type="radio" name="mobile_theme" value="Mtest"> 测试模式</td>
+			   	</tr>
+			   </table>
+			   <br>
+			   </div>
+           </li>
+           <li>
+               <label></label>
+               <input type="submit" value="确定并保存" class="button button-green" />
+               <input type="reset" value="重置" class="button button-red" />
+            </li>
+        </ul>
+    </fieldset>
+</form>
+
+</body>
+</html>

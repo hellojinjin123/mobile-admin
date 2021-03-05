@@ -1,0 +1,30 @@
+<div class="main_right"> 
+<div class="main_right_top">
+		 <script language="javascript" type="text/javascript">
+writeflashhtml("_swf=__HOME__/swf/xixi.swf", "_width=710", "_height=176" ,"_wmode=transparent");
+</script>
+</div>
+        <div class="main_right_main">
+          <div class="main_right_main_top"><img src="__HOME__/images/n_top.jpg" width="710" height="11" /></div>
+<div class="main_right_main_main">        
+  <div class="title">首页 > <a href="__APP__/{$location[0]['alias']}.html">{$location[0]['title']}</a> > <a href="__APP__/Product/index/cid/{$location[1]['id']}.html">{$location[1]['title']}</a></div>
+
+          <div class="n_main">
+            <div class="product_det">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="50%" align="center" valign="top"><img src="__PUBLIC__/data/upload/images/product/m_{$obj.image}" width="260" /></td>
+    <td width="50%" valign="top">
+    &gt; 商品名称： {$obj.title}<br />    
+    &gt; 上架时间： {$obj.create_time|date='Y-m-d',###}<br /><br />
+    &gt; 产品描述： {$obj.content|htmlspecialchars_decode}</td>
+  </tr>
+</table>
+
+            </div>
+          </div>
+          </div>
+          <div class="main_right_main_bottom"><img src="__HOME__/images/n_bottom.jpg" width="710" height="11" /></div>
+        </div>
+    </div>
+      <div style="clear:both;"></div>

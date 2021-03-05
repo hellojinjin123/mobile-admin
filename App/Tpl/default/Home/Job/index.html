@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <layout name="Inc:script" cache="0" />
+</head>
+
+<body>
+
+ <div class="box">
+  <layout name="Inc:menu" cache="0" />
+
+  <div class="banner_n"><img src="__HOME__/images/a1.jpg" width="960" height="200" /></div>
+ <div class="main_n">
+     <div class="mainleft">
+       <div class="mainleft_nav">
+         <div class="tit01">人才招聘</div>
+         <ul>
+             <li><a href="__APP__/Job" class="cur">招聘岗位</a></li>
+           </ul>
+         <div class="bo"><img src="__HOME__/images/n_15.jpg" width="186" height="38" /></div>
+       </div>
+       <div class="tel"><img src="__HOME__/images/n_17.jpg" width="186" height="112" /></div>
+     </div>
+    <div class="mainright">
+    
+
+       {:Y('List',array('style'=>'job_list','model'=>'News','cid'=>'788'))} 
+    </div>
+    <div style="clear:both;"></div>
+  </div>
+</div>
+<layout name="Inc:foot" cache="0" />
+</body>
+</html>

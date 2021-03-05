@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>手机基本设置</title>
+
+<link rel="stylesheet" type="text/css" href="__ADMIN__/Public/css/base.css" />
+<script src="__ADMIN__/Public/js/jquery-1.7.1.min.js"></script>
+<script src="__ADMIN__/Public/js/base.js"></script>
+
+<script>
+	$(function(){
+		
+		$('input[name=weibo_type][value=<?php echo $system["weibo_type"] ?>]').attr('checked',true);
+		
+		$('#delete_image').click(function(){
+			if( confirm('确定要删除Logo吗？') ) {
+				$.get('__APP__/Admin/MobileWebsite/deleteImage',{'id':'<?php echo $system["id"]; ?>'},function(bool){
+					if( bool==1 ) {
+						$('#span_image').css('display','none');
+					}
+				});
+			}
+		});
+		
+	});
+</script>
+
+<style>
+.mobile_theme_box td{padding-right:20px;}
+</style>
+
+</head>
+<body>
+<div class="nav-site">{~getNavSite($c_root,$_GET['cid'])}</div>
+<form action="__APP__/Admin/MobileWebsite/saveBase" method="post" enctype="multipart/form-data" class="form">
+<input type="hidden" name="lang" value="mobile">
+   <fieldset>
+       <ul class="align-list">
+		   <li>
+               <label>Logo上传</label>
+			   <?php if( !empty($system['image']) ) { ?>
+               <span id="span_image">
+			   <img alt="" align="middle" height="80" vspace="5" src="<?php echo __PUBLIC__.'/data/upload/images/mobile/'.$system['image']; ?>">
+           	   <a href="javascript:void(0)" id="delete_image" style="color:red;text-decoration:underline;">删除Logo</a>&nbsp;&nbsp;&nbsp;&nbsp;
+           	   </span>
+           	   <?php } ?>
+               <input type="file" name="image">
+           </li>
+           <li>
+               <label>网站名称</label>
+               <input type="text" id="website" name="website" value="{$system.website}" class="type-text">
+           </li>
+           <li>
+               <label>ICP备案号</label>
+               <input type="text" id="icpnumber" name="icpnumber" value="{$system.icpnumber}" class="type-text">
+           </li>
+           <li>
+               <label>网站版权</label>
+               <input type="text" id="copyright" name="copyright" value="{$system.copyright}" class="type-text">
+           </li>
+		   <li>
+               <label>可信认证</label>
+               <textarea id="credible" name="credible" cols="100" rows="3">{$system.credible}</textarea>
+           </li>
+		   <li>
+               <label>微博插件</label>
+			   <input type="radio" name="weibo_type" value="sina" checked="checked"> 新浪&nbsp;&nbsp;&nbsp;<input type="radio" name="weibo_type" value="qq"> QQ <br>
+               <label></label>
+			   <textarea id="weibo_plug" name="weibo_plug" cols="100" rows="5">{$system.weibo_plug}</textarea>
+           </li>
+           <li>
+           		<label>开启分享</label>
+                <input type="radio" name="isShare" value="1" <if condition="$system.isShare eq 1">checked</if>/>开
+                <input type="radio" name="isShare" value="0" <if condition="$system.isShare eq 0">checked</if>/>关
+           </li>
+           <li>
+           		<label></label>
+                <textarea id="weibo_plug" name="shareInfo" cols="100" rows="5">{$system.shareInfo|htmlspecialchars_decode}</textarea>
+           </li>
+           <li>
+               <label></label>
+               <input type="submit" value="确定并保存" class="button button-green" />
+               <input type="reset" value="重置" class="button button-red" />
+            </li>
+        </ul>
+    </fieldset>
+</form>
+
+</body>
+</html>

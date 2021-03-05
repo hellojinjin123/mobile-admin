@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>系统定制</title>
+        <link rel="stylesheet" type="text/css" href="__ADMIN__/Public/css/base.css" />
+        <link rel="stylesheet" type="text/css" href="__ADMIN__/Public/js/colortip/colortip-1.0-jquery.css" />
+        <script src="__ADMIN__/Public/js/jquery-1.7.1.min.js">
+        </script>
+        <script src="__ADMIN__/Public/js/jquery.lightbox_me.js">
+        </script>
+        <script src="__ADMIN__/Public/js/jquery.form.js">
+        </script>
+        <script src="__ADMIN__/Public/js/97Date/WdatePicker.js">
+        </script>
+        <script src="__ADMIN__/Public/js/colortip/colortip-1.0-jquery.js">
+        </script>
+        <style type="text/css">
+            em {
+                color: #999
+            }
+            
+            a {
+                color: blue;
+            }
+            
+            .form label.top {
+                vertical-align: top;
+            }
+            
+            .form span.span {
+                vertical-align: top;
+                display: inline-block;
+            }
+            
+            .tabs {
+                margin-bottom: -51px;
+                overflow: hidden;
+            }
+            
+            .tabs div {
+                float: left;
+                padding: 10px 20px;
+                margin-left: 40px;
+                border: 1px solid #DDD;
+                border-bottom: none;
+            }
+			#navList ol{
+				float:left;
+			}
+			#navList ol li{
+				float:left;
+				padding:0 7px;
+				border:1px #CCCCCC solid;
+				margin:0 7px 0 0;
+			}
+			#navList ol li a{
+				color:#555555;
+			}
+			#selectRadio{
+				margin: -24px 0 0 138px; 
+			}
+			#navList a{
+				padding:0 7px;
+				color:#555555;
+				border:1px #CCCCCC solid;
+				margin:7px;
+				line-height:25px;
+			}
+			#navList{
+				float:right;
+			}
+			#navList .null{
+				background:#ED6E6E;
+				color:#FFF;
+				border:1px #ED6E6E solid;
+			}
+        </style>
+    </head>
+    <body>
+        <h2>系统定制</h2>
+        <form method="post" action="__APP__/Admin" class="form">
+            <fieldset>
+                <ul class="align-list">
+                  
+                        <li id="opt_msg"></li>
+                <!-- 	<li>
+                        <label>
+                            重置数据
+                        </label>
+                        <input type="button" value="清除用户数据" style="padding:5px;" id="clearUserData">
+                    </li>
+                    <li>
+                        <label>
+                            多语言
+                        </label>
+                        {~langInput('checkbox')}<a href="#" onclick="openLangWin();">管理</a>
+                    </li> -->
+                    
+                    <li>
+                        <label>
+                            系统模块
+                        </label>
+                        
+                        <volist name="modellist" id="vo">
+                        
+                        <input type="checkbox" id="modules{$vo.id}" name="modules" value="{$vo.id}" <php> if($vo['is_sel']==1){ echo 'checked'; } </php>  onclick="setMobile(this.value)">{$vo.modelname} &nbsp;&nbsp;
+                        
+                        </volist>
+                        
+                        
+                        
+                        <a href="#" onclick="openModelWin();">管理</a>
+                    </li>
+                    <li>
+                        <label class="top">
+                            己选模块
+                        </label>
+                        <select id="one_category" name="one_category" onchange="changeCategory(this,'two_category')" multiple="multiple" style="height:150px;">
+                        <option value="" selected>请选择</option>
+                        <volist name="modellist" id="vo">
+                        <if condition="$vo.is_sel eq 1">
+                        <option value="{$vo.id}" >{$vo.modelname}</option>
+                        </if>
+                        </volist>
+                        </select>
+                    </li>
+                    <li>
+                        <label class="top">
+                            二级栏目
+                        </label>
+                        <select id="two_category" name="two_category" onchange="changeCategory(this,'three_category')" multiple="multiple" style="height:100px;">
+                            
+                        </select>
+                        <span class="span"><a href="#" onclick="openColumnWin('one_category');">管理</a></span>
+                    </li>
+                    <li>
+                        <label class="top">
+                            三级栏目
+                        </label>
+                        <select id="three_category" name="three_category" onchange="changeCategory(this,'four_category')" multiple="multiple" style="height:100px;">
+                            <option selected="selected" value="">请选择</option>
+                        </select>
+                        <span class="span"><a href="#" onclick="openColumnWin('two_category');">管理</a></span>
+                    </li>
+                    <li>
+                        <label class="top">
+                            四级栏目
+                        </label>
+                        <select id="four_category" name="four_category" multiple="multiple" style="height:100px;">
+                            <option selected="selected" value="">请选择</option>
+                        </select>
+                        <span class="span"><a href="#" onclick="openColumnWin('three_category');">管理</a></span>
+                    </li>
+                    <li>
+                        <hr>
+                    </li>
+                    <!--  
+                    <li>
+                    	<label class="top">
+                            栏目定义
+                        </label> 
+                        <div id="selectRadio">
+                        {~isLang2()}<span class="span"><a href="#" onClick="addNav()">管理</a></span> 
+
+                        <span id="navList">
+                        		当前栏目效果：<br/>
+                                <volist name="part" id="vo">
+                                	<if condition="$vo.is_publish eq 1">
+                                    	<a href="#" onClick="addNav(false,{$vo.id})" va="{$vo.id}">{$vo.title}</a>
+                                    <else/>
+                                    	<a href="#" class="null" onClick="addNav(false,{$vo.id})" va="{$vo.id}">{$vo.title}</a>
+                                    </if>
+                                    <notempty name="vo.next">
+                                    &gt;&gt;
+                                    	<volist name="vo.next" id="tt">
+                                        	<if condition="$tt.is_publish eq 1">
+                                        		<a class="nextPart" href="#" onClick="addNav(false,{$tt.id})" va="{$tt.id}">{$tt.title}</a>
+                                             <else/>
+                                             	<a class="null" href="#" onClick="addNav(false,{$tt.id})" va="{$tt.id}">{$tt.title}</a>
+                                             </if>
+                                        </volist>
+                                    </notempty>
+                                    <br/>
+                                </volist>
+
+                        </span>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <label>
+                            开通空间时间
+                        </label>
+                        <input type="text" id="begin_time" name="begin_time" onClick="WdatePicker()" value="<?php echo date('Y-m-d',$custom['begin_time']);?>" class="type-text" style="width:282px;">
+                    </li>
+                    <li>
+                        <label>
+                            空间到期时间
+                        </label>
+                        <input type="text" id="end_time" name="end_time" onClick="WdatePicker()" value="<?php echo date('Y-m-d',$custom['end_time']);?>" class="type-text" style="width:282px;">
+                    </li>
+                    <li>
+                        <label>
+                            空间容量
+                        </label>
+                        <input type="text" id="space_mb" name="space_mb" value="<?php echo $custom['space_mb'];?>" class="type-text" style="width:282px;">MB
+                    </li>-->
+                    
+                    <li>
+                        <label>
+                        </label>
+                        <input type="submit" value="生成系统" class="button button-green" />
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+        
+        <!-- 栏目管理 -->
+      <!--    <div id="nav_box" style="display:none;">
+            <form id="nav_form" action="" method="post" class="form">
+                <fieldset>
+                	<input type="hidden" name="getId" value="" />
+                    <ul class="align-list">
+                        <li>
+                            <h3>栏目名称自定义</h3>
+                        </li>
+                        <li style="height:30px;">
+                            <div id="msg_part" style="display:none;line-height:30px;text-align:center;height:30px;color:#fff;">
+                            </div>
+                        </li>
+                        <li>
+                        	<label>
+                                选择父类
+                            </label> 
+                      		<select id="pidPart" name="pid" style="padding: 7px;">
+                                 {~_partF()}
+                            </select>
+                            <a id="deletePart" class="delete" onclick="deletePart()" href="#">删除</a>
+                        </li>
+                        <li id="selectLang"><label>
+                                选择语言
+                                        <a class="issue colorTipContainer red" href="#">
+                                        ?
+                                        </a>
+                            </label> 
+                        	{~isLang2()}
+                        	{*~isLang(false)*}
+                        </li>
+                        <li>
+                            <label>
+                                栏目标题
+                            </label>
+                            <input name="title" id="title" class="type-text">
+                        </li>
+                        <li>
+                        	<label>
+                                Url<a href="#" class="issue" title="前台跳转的地址，连接到本网站_ _APP_ _/Index；外网:http://xxxx.com">?</a>
+                            </label>
+                            <input name="url" id="title" class="type-text">
+                        </li>
+                        <li>
+                            <label>
+                                描述
+                            </label>
+                            <textarea id="description" name="description" cols="100" rows="3"></textarea>
+                        </li>
+                        <li>
+                        	<label>操作模块<a href="#" class="issue" title="填写页面操作模块">?</a></label>
+                            <input name="nowModule" id="nowModule" class="type-text">
+                        </li>
+                        <li>
+                            <label>
+                                排序<a href="#" class="issue" title="使用倒序排列">?</a>
+                            </label>
+                            <input name="orderNum" id="ordernum" value="10" class="type-text" style="width:100px"><em>提示：数字最大排最前（关联到前后台排序）</em>
+                        </li>
+                        <li>
+                            <label>
+                                现在发布<a href="#" class="issue" title="在网站前台显示">?</a>
+                            </label>
+                            <input type="checkbox" id="is_publish" name="is_publish" value="1" checked>
+                        </li>
+                        <li>
+                            <label>
+                            </label>
+                            <input type="submit" value="修改栏目" class="button" onClick="return addPart(true)"/>
+                            <input type="submit" value="添加栏目" class="button button-green" id="nav_form_add"  onClick="return addPart()" />
+                            <input type="reset" value="重置" class="button button-red" />
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>-->
+        
+       
+        
+         <!-- 栏目管理 -->
+        <div id="column_box" style="display:none">
+            <form id="column_form" action="" method="post" class="form">
+                <input type="hidden" id="id" name="id" value="">
+                <input type="hidden" id="m_id" name="model_id" value="">
+                <input type="hidden" id="fid" name="fid" value="">
+                <fieldset>
+                    <ul class="align-list">
+                        <li>
+                            <h3>栏目标题与属性设置</h3>
+                        </li>
+                        <li style="height:30px;">
+                            <div id="msg_column" style="display:none;line-height:30px;text-align:center;height:30px;color:#fff;">
+                            </div>
+                        </li>
+                        <li>
+                            <label>
+                                栏目列表
+                            </label>
+                            <select id="column_id" name="column_id" onchange="selectedColumn(this)" style="padding: 7px;">
+                            </select>&nbsp;&nbsp;&nbsp;<a href="#" class="delete" onclick="deleteColumn()">删除</a>
+                        </li>
+                       
+                        
+                        <li>
+                            <label>
+                                栏目名称
+                            </label>
+                            <input name="title" id="title" class="type-text">
+                        </li>                   
+                          <li>
+                            <label>
+                                栏目Funname
+                            </label>
+                            <input name="funname" id="funname" class="type-text">
+                        </li> 
+                        <li>
+                            <label>
+                                呈现样式 <a href="#" class="issue" title="“列表”和“单页”是关联前后台展示数据方式，“自动”会在后台选择它的下一级分类">?</a>
+                            </label>
+                            <input type="radio" id="tpl_one" name="tpl_one" value="list" checked>列表&nbsp;&nbsp;
+                            <input type="radio" id="tpl_one" name="tpl_one" value="one">单页图文&nbsp;&nbsp;
+                        </li>
+                        
+                        <li>
+                            <label>
+                                描述
+                            </label>
+                            <textarea id="description" name="description" cols="100" rows="3"></textarea>
+                        </li>
+                        
+                        
+                        <li>
+                            <label>
+                            </label>
+                            <input type="submit" value="保存" class="button" onclick="return addColumn()"/>
+                            
+                            <input type="reset" value="重置" class="button button-red" />
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+        
+        <!-- 多语言管理 -->
+       <!--   <div id="lang_box" style="display:none">
+            <form id="lang_form" action="" method="post" class="form">
+                <input type="hidden" name="pid" value="11">
+                <fieldset>
+                    <ul class="align-list">
+                        <li>
+                            <h3>多语言管理</h3>
+                        </li>
+                        <li style="height:30px;">
+                            <div id="msg_lang" style="display:none;line-height:30px;text-align:center;height:30px;color:#fff;">
+                            </div>
+                        </li>
+                        <li>
+                            <label>
+                                多语言
+                            </label>
+                            <select id="lang_id" name="lang_id" onchange="selectedLang(this)" style="padding: 7px;">
+                            </select>&nbsp;&nbsp;&nbsp;<a href="#" class="update" onclick="defaultLang()">默认</a>&nbsp;&nbsp;<a href="#" class="delete" onclick="deleteLang()">删除</a>
+                        </li>
+                        <li>
+                            <label>
+                                语言名称
+                            </label>
+                            <input name="title" id="title" class="type-text">
+                        </li>
+                        <li>
+                            <label>
+                                别名
+                            </label>
+                            <input name="alias" id="alias" class="type-text">
+                        </li>
+                        <li>
+                            <label>
+                                描述
+                            </label>
+                            <textarea id="description" name="description" cols="100" rows="3">
+                            </textarea>
+                        </li>
+                        <li>
+                            <label>
+                                排序
+                            </label>
+                            <input name="ordernum" id="ordernum" value="10" class="type-text">
+                        </li>
+                        <li>
+                            <label>
+                            </label>
+                            <input type="submit" value="修改语言" class="button" onclick="return updateLang()"/><input type="submit" value="添加语言" class="button button-green" onclick="return addLang()"/><input type="reset" value="重置" class="button button-red" />
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>-->
+        
+        <!-- 模块管理 -->
+        <div id="model_box" style="display:none">
+            <form id="model_form" action="" method="post" class="form">
+                
+                <fieldset>
+                    <ul class="align-list">
+                        <li>
+                            <h3>模块管理</h3>
+                        </li>
+                        <li style="height:30px;">
+                            <div id="msg_model" style="display:none;line-height:30px;text-align:center;height:30px;color:#fff;">
+                            </div>
+                        </li>
+                        <li>
+                            <label>
+                                模块
+                            </label>
+                            <select id="model_id" name="model_id" onchange="selectedModel(this)" style="padding: 7px;">
+                            </select>&nbsp;&nbsp;<a href="#" class="delete" onclick="deleteModel()">删除</a>
+                        </li>
+                        <li>
+                            <label>
+                                模块名称
+                            </label>
+                            <input name="modelname" id="modelname" class="type-text" onblur="modelname_check()">
+                        </li>
+                        <li>
+                            <label>
+                                模块Action
+                            </label>
+                            <input name="modelaction" id="modelaction" class="type-text" onblur="modelaction_check()">
+                        </li>
+                        <li>
+                            <label>
+                                描述
+                            </label>
+                            <textarea id="modeldescription" name="description" cols="100" rows="3">
+                            </textarea>
+                        </li>
+                       
+                        <li>
+                            <label>
+                            </label>
+                            <input name="id" id="modelid" type="hidden" value="">
+                            <input type="submit" value="保存" class="button" onclick="return addmodel()"/>
+                           
+                            <input type="reset" value="重置" class="button button-red" />
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+        
+        <script>                                
+            //ajax操作提示
+            function optMsg(eleid, text, bgcolor){
+                $('#' + eleid).text(text);
+                $('#' + eleid).css({
+                    'background-color': bgcolor
+                });
+                $('#' + eleid).fadeIn().delay(2000).fadeOut(400);
+            }
+   
+            function openModelWin(){
+                $("#model_box").lightbox_me({
+                    centered: true,
+                    onLoad: function(){
+                        $('#model_id').load('__APP__/Admin/Setting/selectOptionModel');
+                        $('#modelname').val('');
+                        $('#modelaction').val('');
+                        $('#modeldescription').val('');
+                    },
+                    onClose: function(){
+                        window.location.reload();
+                        //$('#msg_lang').hide();
+                    }
+                });
+            }
+
+			function modelname_check(){
+				if($('#modelid').val()=='' && $('#modelname').val()!=''){
+					$.get('__APP__/Admin/Setting/modelnamecheck', {
+	                    'modelname': $('#modelname').val()
+	                }, function(data){
+	                    
+	                	if (data == "0") {
+	                		$('#msg_model').css({'background-color':'red'})
+		                	$('#msg_model').text('模块名称已存在，请换一个！');
+	                		$('#msg_model').fadeIn().delay(0);	                        
+	                    }
+	                    else {
+	                    	$('#msg_model').css({'background-color':'#0A8C00'})
+		                	$('#msg_model').text('模块名称可用！');	                        
+	                    	$('#msg_model').fadeIn().delay(0);
+	                        
+	                    }
+	                });
+				}
+			}
+
+			function modelaction_check(){
+
+				if($('#modelid').val()=='' && $('#modelaction').val()!=''){
+					$.get('__APP__/Admin/Setting/modelactioncheck', {
+	                    'modelaction': $('#modelaction').val()
+	                }, function(data){
+	                    
+	                	if (data == "0") {
+	                		$('#msg_model').css({'background-color':'red'})
+		                	$('#msg_model').text('模块Action已存在，请换一个！');
+	                		$('#msg_model').fadeIn().delay(0);	                        
+	                    }
+	                    else {
+	                    	$('#msg_model').css({'background-color':'#0A8C00'})
+		                	$('#msg_model').text('模块Action可用！');	                        
+	                    	$('#msg_model').fadeIn().delay(0);
+	                        
+	                    }
+	                });
+				}
+			}
+            
+			function addmodel(){
+				
+				$('#model_form').ajaxForm({
+                    dataType: 'json',
+                    url: '__APP__/Admin/Setting/addModel',
+                    success: function(data){
+                    
+                        $('#model_id').load('__APP__/Admin/Setting/selectOptionModel', function(response, status, xhr){
+                            if (status == "error") {
+                                window.optMsg('msg_model', '保存失败！', 'red');
+                            }
+                            else {
+                                window.optMsg('msg_model', '保存成功！', '#0A8C00');
+                                $('#modelname').val('');
+                                $('#modelaction').val('');
+                                $('#modelid').val('');
+                                
+                                $('#modeldescription').val('');
+                            }
+                        });
+                        
+                    }
+                });
+			}           
+
+			function selectedModel(_this){
+				$.getJSON('__APP__/Admin/Setting/getModel', {
+                    'id': $(_this).val()
+                }, function(data){
+                    $('#modelname').val(data.modelname);
+                    $('#modelaction').val(data.modelaction);
+                    $('#modeldescription').val(data.description);
+                    $('#modelid').val(data.id);
+                });
+
+		    }
+		    
+			function deleteModel(){
+				var model_id = $('#model_id').val();
+                if (model_id == 0) {
+                    window.optMsg('msg_model', '请选择要删除的模块！', 'red');
+                }
+                else {
+                    var lang_text = $('#model_id').find("option:selected").text();
+                    if (confirm("确认要删除“" + lang_text + "”，删除后无法恢复！")) {
+                    
+                        $.get('__APP__/Admin/Setting/deleteModel', {
+                            'id': model_id
+                        }, function(data){
+
+                        	if (data == 'sub_exist') {
+                                window.optMsg('msg_model', '请先删除子分类！', 'red');
+                                return;
+                            }
+                        	else if (data == 'true') {
+                                
+                                $('#model_id').load('__APP__/Admin/Setting/selectOptionModel', function(response, status, xhr){
+                                    if (status == "error") {
+                                        window.optMsg('msg_model', '删除模块失败！', 'red');
+                                    }
+                                    else {
+                                        window.optMsg('msg_model', '删除模块成功！', '#0A8C00');
+                                        $('#modelname').val('');
+                                        $('#modelaction').val('');
+                                        $('#modeldescription').val('');
+                                    }
+                                });
+                            }
+                            else {
+                                window.optMsg('msg_model', '删除模块失败！', 'red');
+                            }
+                            
+                            
+                        });
+                    }
+                }
+			}
+            
+ 			function setMobile(id){
+ 	 			var sel = $('#modules'+id).attr('checked');
+ 	 			if(sel == 'checked'){
+					var is_sel = 1;
+ 	 	 		}else{
+ 	 	 			var is_sel = 0;
+ 	 	 	 	}
+				
+ 	 			$.get('__APP__/Admin/Setting/selModel', {
+                    'id': id,'is_sel':is_sel
+                }, function(data){
+                    
+                    var opt_msg;
+                	if( data==1 ) {
+
+                    	$('#one_category').load('__APP__/Admin/Setting/is_selModel');
+            			opt_msg = $("#opt_msg").css("background-color","#319E01").text('状态已改变');
+            		}else {
+            			opt_msg = $("#opt_msg").css('background-color','#D50D0D').text('状态未改变');
+            		}
+            		opt_msg.show().animate({left: '+=50%'}, 100).delay(2000).animate({left: '-=50%'}, 100).fadeOut(100);
+            		                  
+                    	
+                });
+ 	 		}
+            
+            //模块下拉联动---------------------------------------------------------------
+            function changeCategory(_this, target_id){
+                
+            	
+                if (target_id == 'two_category') {
+                	$('#three_category').html('');                  
+                    $('#four_category').html(''); 
+                    $('#m_id').val(id);                    
+                    var mid = $(_this).val()[0];  
+                    $('#m_id').val(mid); 
+                    var fid = 1;              
+                }else{
+					var fid = $(_this).val()[0]; 
+					var mid = $('#m_id').val();
+					$('#four_category').html(''); 
+                }                                     
+                $.get("__APP__/Admin/Setting/selectOptionColumn", {
+                    "m_id": mid,'fid':fid
+                }, function(data){
+                	$('#' + target_id).html(data);               	              	                    
+                });
+            }
+
+          //通过父下拉列表ID，获取下级下拉列表ID
+            function getSubSelectID(p_select_id){
+                var select_id = '';
+                if (p_select_id == 'one_category') {
+                    select_id = 'two_category';
+                }
+                else 
+                    if (p_select_id == 'two_category') {
+                        select_id = 'three_category';
+                    }
+                    else 
+                        if (p_select_id == 'three_category') {
+                            select_id = 'four_category';
+                        }
+                return select_id;
+            }
+            
+            //栏目打开管理窗口
+            function openColumnWin(p_select_id){
+            	
+                if(p_select_id=='one_category'){
+                	var mid = $('#' + p_select_id).val()[0];               	
+                	$('#column_form #fid').val(1);
+                	if(mid!=''){
+                		var loop = true;
+                    }else{
+                    	var loop = false;
+                    }               	
+                }else{
+                	var fid = $('#' + p_select_id).val()[0];
+                	$('#column_form #fid').val(fid);
+                	if(fid!=''){
+                		var loop = true;
+                    }else{
+                    	var loop = false;
+                    }
+                }                               
+                
+                if (loop == false) {
+                    alert('请选择上级栏目！');
+                }
+                else {
+                    var column_id_val = '';
+                    $("#column_box").lightbox_me({
+                        centered: true,
+                        onLoad: function(){
+                            $('#column_id').load('__APP__/Admin/Setting/selectOptionColumn', {
+                                'fid': $('#column_form #fid').val(),'m_id':$('#column_form #m_id').val()
+                            }, function(){
+                                var select_id = getSubSelectID(p_select_id);
+                                column_id_val = $('#' + select_id).val();
+                                $('#column_id').val(column_id_val);
+                                $('#column_id').trigger('change');
+                            });
+                            //window.clearColumnInputValue();
+                        },
+                        onClose: function(){
+                            var select_id = getSubSelectID(p_select_id);
+                            $.get("__APP__/Admin/Setting/selectOptionColumn", {
+                            	'fid': $('#column_form #fid').val(),'m_id':$('#column_form #m_id').val()
+                            }, function(data){
+                            	$('#' + select_id).html(data);
+                                                              
+                                $('#msg_column').hide();
+                               
+                                $('#column_form #title').val('');                       
+                                                     
+                                $('#column_form #description').val('');
+                            });
+                        }
+                    });
+                }
+            }
+ 
+            //添加栏目
+            function addColumn(){
+            
+                var one_category = $('#one_category').val();
+                var two_category = $('#two_category').val();
+                var three_category = $('#three_category').val();
+               
+                $('#column_form').ajaxForm({
+                    dataType: 'text',
+                    data: {
+                        'one_category': one_category != null ? one_category[0] : '',
+                        'two_category': two_category != null ? two_category[0] : '',
+                        'three_category': three_category != null ? three_category[0] : ''
+                    },
+                    url: '__APP__/Admin/Setting/addColumn',
+                    success: function(data){
+                       
+                        $('#column_id').load('__APP__/Admin/Setting/selectOptionColumn', {
+                            'fid': $('#column_form #fid').val(),'m_id':$('#column_form #m_id').val()
+                        }, function(response, status, xhr){
+                            if (status == "error") {
+                                window.optMsg('msg_column', '添加栏目失败！', 'red');
+                            }
+                            else {
+                                window.optMsg('msg_column', '添加栏目成功！', '#0A8C00');
+                                
+                                $('#column_form #description').val('');
+                                $('#column_form #title').val('');
+                                $('#column_form #funname').val('');
+                                //$('#column_form #column_id').val('');
+                            }
+                        });
+                    }
+                });
+            }
+ 
+          //选中栏目
+            function selectedColumn(_this){
+                var column_id_val = $(_this).val();
+                if (column_id_val != '') {
+                    $.getJSON('__APP__/Admin/Setting/getCategory', {
+                        'id': $(_this).val()
+                    }, function(data){
+                        $('#column_form #id').val(data.id);
+                        $('#column_form #title').val(data.title);                       
+                        $('#column_form #tpl_one[value="' + data.tpl_one + '"]').attr('checked', true);
+                        $('#column_form input[name=tpl_one][value="' + data.tpl_one + '"]').trigger('change'); 
+                        $('#column_form #funname').val(data.funname);                      
+                        $('#column_form #description').val(data.description);
+                    });
+                }
+                else {
+                    window.clearColumnInputValue();
+                }
+            }
+
+			function deleteColumn(){
+				var column_id = $('#column_id').val();
+                if (column_id == 0) {
+                    window.optMsg('msg_column', '请选择要删除的模块！', 'red');
+                }
+                else {
+                    var lang_text = $('#column_id').find("option:selected").text();
+                    if (confirm("确认要删除“" + lang_text + "”，删除后无法恢复！")) {
+                    
+                        $.get('__APP__/Admin/Setting/deleteColumn', {
+                            'id': column_id
+                        }, function(data){
+
+                        	if (data == 'sub_exist') {
+                                window.optMsg('msg_column', '请先删除子分类！', 'red');
+                                return;
+                            }
+                        	else if (data == 'true') {
+                                
+                                $('#column_id').load('__APP__/Admin/Setting/selectOptionColumn', {
+                                    'fid': $('#column_form #fid').val(),'m_id':$('#column_form #m_id').val()
+                                },function(response, status, xhr){
+                                    if (status == "error") {
+                                        window.optMsg('msg_column', '删除栏目失败！', 'red');
+                                    }
+                                    else {
+                                        window.optMsg('msg_column', '删除栏目成功！', '#0A8C00');
+                                        window.clearColumnInputValue();
+                                    }
+                                });
+                            }
+                            else {
+                                window.optMsg('msg_model', '删除栏目失败！', 'red');
+                            }
+                            
+                            
+                        });
+                    }
+                }
+			}
+            
+            //清除字段值
+            function clearColumnInputValue(){
+                $('#column_form #id').val('');
+                $('#column_form #title').val('');
+                $('#column_form #description').val('');
+                $('#column_form #funname').val('');
+            }
+     
+            
+			
+			
+        </script>
+    </body>
+</html>

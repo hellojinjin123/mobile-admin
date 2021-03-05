@@ -1,0 +1,9 @@
+[ 2013-12-30T16:47:57+08:00 ] /skybroad/ | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.020834s ]
+[ 2013-12-30T16:47:57+08:00 ] /skybroad/ | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000353s ]
+[ 2013-12-30T16:47:57+08:00 ] /skybroad/ | SQL: SHOW COLUMNS FROM `m_advert` [ RunTime:0.048975s ]
+[ 2013-12-30T16:47:57+08:00 ] /skybroad/ | SQL: SELECT * FROM `m_advert` ORDER BY id asc LIMIT 5  [ RunTime:0.000417s ]
+[ 2013-12-30T16:47:58+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1388393287054 | SQL: SHOW COLUMNS FROM `m_system` [ RunTime:0.002120s ]
+[ 2013-12-30T16:47:58+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1388393287054 | SQL: SELECT * FROM `m_system` LIMIT 1  [ RunTime:0.000309s ]
+[ 2013-12-30T16:47:58+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1388393287054 | SQL: SHOW COLUMNS FROM `m_advert` [ RunTime:0.001345s ]
+[ 2013-12-30T16:47:58+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1388393287054 | SQL: SELECT * FROM `m_advert` ORDER BY id asc LIMIT 5  [ RunTime:0.000277s ]
+[ 2013-12-30T16:47:58+08:00 ] /skybroad/index.php/Mobile/Ajaxload/index_advajaxload?_=1388393287054 | NOTIC: [8] Undefined variable: str AjaxloadAction.class.php 第 65 行.

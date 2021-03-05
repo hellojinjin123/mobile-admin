@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>默认数据表格</title>
+<link rel="stylesheet" type="text/css" href="__ADMIN__/Public/css/base.css" />
+<script src="__ADMIN__/Public/js/jquery-1.7.1.min.js"></script>
+<script src="__ADMIN__/Public/js/base.js"></script>
+
+<script>
+function Data(){
+	this._APP_ = "__APP__";
+	this.c_root = "<?php echo $c_root; ?>";
+	this.get_cid = "<?php echo $_GET['cid']; ?>"
+	this.rowpage = "<?php echo $rowpage; ?>";
+	this.actionName = "<?php echo $actionName;?>";
+}
+
+
+function show(id){
+	 
+	if($('#p'+id).attr('style')=='display:none'){
+		$('#p'+id).show();
+	}else{
+		$('#p'+id).hide();
+	}
+	
+}
+
+function reply(id){
+	if($('#reply'+id).val()==''){
+		alert('请输入回复内容');
+		return false;
+	}
+
+	$.ajax({
+		   type: "POST",
+		   url: "__APP__/Admin/News/comment_save",
+		   data: "reply="+$('#reply'+id).val()+"&id="+id,
+		   success: function(msg){
+			      if(msg==1){
+					alert('回复成功');
+					location.reload();
+				  }else{
+					  alert('回复失败');
+			      }
+		   }
+		});
+}
+
+function setStatus(id){
+	 
+	if($('#status'+id).attr('checked')=='checked'){
+		var status = 1;
+	}else{
+		var status = 0;
+	}
+	$.ajax({
+		   type: "POST",
+		   url: "__APP__/Admin/News/setStatus",
+		   data: "status="+status+"&id="+id,
+		   success: function(msg){
+			      if(msg==1){
+					//alert('操作成功');
+					location.reload();
+				  }else{
+					  //alert('操作失败');
+			      }
+		   }
+		});
+}
+
+ 
+</script>
+<script src="__ADMIN__/Public/js/index.js"></script>
+
+</head>
+<body>
+
+<div class="nav-site">{~getNavSite($c_root,$_GET['cid'])} > 评论</div>
+
+<form action="__APP__/Admin/News" method="post" id="form_list">
+<input type="hidden" name="cid" value="{.cid}" />
+<table class="grid-function" border="0" cellpadding="0" cellspacing="0">
+	<thead>
+		<tr>
+			<th width="600">
+				<div class="qw-fl grid-add-data">
+					<!--  <input type="button" value="添加信息" onclick="goToUrl('__APP__/Admin/News/edit/lang/{$lang}/cid/{.cid}');" class="button-img-add" />
+				-->
+				</div>
+				<div class="qw-fl grid-batch-operate">
+				<!-- 	<a href="#" id="on_ordernum" title="数字排序"><img src="__ADMIN__/Public/imgs/sort.png" /></a>&nbsp;&nbsp;
+					<a href="#" id="on_move" title="移动数据"><img src="__ADMIN__/Public/imgs/move.png"  /></a>&nbsp;&nbsp;
+					<a href="#" id="on_copy" title="复制一份"><img src="__ADMIN__/Public/imgs/copy.png"  /></a>&nbsp;&nbsp;
+					
+					<a href="#" id="on_del" title="彻底删除"><img src="__ADMIN__/Public/imgs/delete.png" /></a>&nbsp;&nbsp;
+				    -->
+				</div>
+				<div class="qw-fr">
+					<!--  <input name="searchKey" id="searchKey" value="{$searchKey}" onclick="inputText(this,'请输入关键字');" onblur="inputText(this,'请输入关键字');" class="grid-search-input" /> <input type="button" value="搜索" class="button" id="search_button" />
+				-->
+				</div>
+			</th>
+		</tr>
+	</thead>
+ 
+</table>
+<table class="grid-table" border="1" cellpadding="0" cellspacing="0"> 
+	<thead> 
+		<tr>
+			<!-- <th width="15"><input type="checkbox" id="chk_all"></th>  -->
+			
+		    <th>评论标题</th>
+		    <th>评论内容</th>
+		    <th width="60">评论时间</th>
+		    <th>回复内容</th>
+		    <th width="60">回复时间</th>
+		   <th width="30">审核</th>
+		    <th width="60">操作</th>
+		</tr> 
+	</thead>
+	<notempty name="dataList">
+	<tbody>
+		<volist name="dataList" id="vo">
+		<tr> 
+			<!-- <td><input type="checkbox" name="ids[]" id="ids{$vo.id}" value="{$i},{$vo.id}"></td>  -->
+			 <td>{$vo.title}</td>
+			 <td>{$vo.content}</td>
+			 <td>{$vo.create_time|date='Y-m-d H:i:s',###}</td>
+			 <td>{$vo.reply}</td>
+			 
+			 <td><php> if(!empty($vo['reply_time'])){ </php>{$vo.reply_time|date='Y-m-d H:i:s',###}<php> } </php></td>
+			  <td><input type="checkbox" name="status" id="status{$vo.id}" value="{$vo.status}" onclick="setStatus('{$vo.id}')" <php> if($vo['status']==1){ echo 'checked'; } </php> ></td>
+		    <td>
+		    <a href="javascript:void(0)" onclick="show('{$vo.id}')"  >回复</a>&nbsp;&nbsp;&nbsp;
+		    <a href="#" onclick="javascript:deleteData('__APP__/Admin/News/comment_del/id/{$vo.id}');"><img src="__ADMIN__/Public/imgs/cross.png" /></a></td>
+		</tr>
+		<tr id="p{$vo.id}" style="display:none"><td colspan="7">
+		 
+		回复内容:
+		<textarea name="reply}" id="reply{$vo.id}" cols="53" rows="3">{$vo.reply}</textarea>
+		<input name="id" type="hidden" value="{$vo.id}"/>
+		<input name="sub" type="button" value="提交" onclick="return reply('{$vo.id}')"/>
+		 
+		</td></tr>
+		</volist>
+	</tbody>
+	<else/>
+	<tbody>
+		<tr>
+			<td colspan="11" align="center" style="color:red;">没有找到数据！！！</td>
+		</tr>
+	</tbody>
+	</notempty>
+	<tfoot>
+		<tr>
+			<td colspan="11">
+				<div class="qw-fl">
+					 
+				</div>
+				<div class="qw-fr">
+					<div class="grid-pagination">
+					{$pageBar}
+					</div>
+				</div>
+			</td>
+		</tr>
+	</tfoot>
+</table>
+</form>
+
+
+
+</body>
+</html>
+
+
+ 

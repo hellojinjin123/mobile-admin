@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<layout name="Inc:script" cache="0" />
+<script src="__PUBLIC__/js/jquery.form.js"></script>
+<script>
+$(document).ready(function() { 
+    $('#joinForm').ajaxForm({ 
+        beforeSubmit: function(formData, jqForm, options){
+
+    		if(document.getElementById('linkman').value==''){
+    			alert('请填写姓名');
+    			document.getElementById("linkman").focus();
+    			return false;
+    		}
+    		if(document.getElementById("email").value!=""){		
+  				var CheckMail = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;			
+  				if (!CheckMail.test(document.getElementById("email").value))
+  	  			{
+  	  			  alert("邮箱格式不正确");
+  	  			  document.getElementById("email").focus();
+  	  			  return false;
+  	  			}
+  			}
+    		if(document.getElementById('tel').value==''){
+    			alert('请填写您的联系电话');
+    			document.getElementById("tel").focus();
+    			return false;
+    		}
+    		if(document.getElementById('content').value==''){
+    			alert('请填写内容');
+    			document.getElementById("content").focus();
+    			return false;
+    		}
+    		if(document.getElementById('verify').value==''){
+    			alert('请填写验证码');
+    			document.getElementById("verify").focus();
+    			return false;
+    		}
+    		return true;
+        },
+        success: function(responseText, statusText, xhr, $form) {
+            if( responseText=='1' ) {
+				alert('加盟申请成功,感谢您对我们的支持！');
+				window.location.href='__APP__';
+            } else if( responseText=='verify_error' ) {
+            	alert('验证码错误！');
+            } else {
+            	alert('加盟申请失败,请稍候再试或直接联系我们！');
+            }
+        } 
+    }); 
+}); 
+
+function fleshVerify(type){ 
+	//重载验证码
+	var timenow = new Date().getTime();
+	if (type){
+		document.getElementById('verifyImg').src= '__APP__/Index/verify/adv/1/'+timenow;
+	}else{
+		document.getElementById('verifyImg').src= '__APP__/Index/verify/'+timenow;
+	}
+}
+</script>
+</head>
+
+<body>
+<div class="box">
+    <layout name="Inc:menu" cache="0" />
+  <div class="nav_b"><img src="__HOME__/images/index_03.jpg" width="1000" height="115" /></div>
+  <div class="main_s_det">
+<div class="main_left main_left_bg_03">
+        <div class="main_left_top"><img src="__HOME__/images/n_03_1.jpg" width="209" height="62" /></div>
+      <div class="main_left_main">
+         {:Y('Category',array('style'=>'left','alias'=>'Joinin'))}
+      </div>
+      <layout name="Inc:leftadd" cache="0" />
+
+</div>
+<div class="main_right"> 
+<div class="main_right_top">
+		 <script language="javascript" type="text/javascript">
+writeflashhtml("_swf=__HOME__/swf/xixi.swf", "_width=710", "_height=176" ,"_wmode=transparent");
+</script>
+</div>
+        <div class="main_right_main">
+          <div class="main_right_main_top"><img src="__HOME__/images/n_top.jpg" width="710" height="11" /></div>
+<div class="main_right_main_main">        
+  <div class="title">首页 > <a href="__APP__/Join.html">在线加盟</a> > 加盟申请</div>
+        <div id="cms_message_box">
+
+        <form  method="post" id="joinForm" action="__APP__/Join/joinSave">
+        <ul>
+            <li><label>客户姓名：</label><input type="text" name="linkman" id="linkman" class="input_box" /></li>
+            <li><label>电子邮件：</label><input type="text" name="email" id="email" class="input_box" /></li>
+            <li><label>联系电话：</label><input type="text" name="tel" id="tel" class="input_box" /></li>
+            <li class="textarea"><label>咨询内容：</label>
+              <textarea name="content" class="input_box" id="content"></textarea>
+            </li>
+            <li class="yam">
+                <label>验证码：</label>
+                <input type="text" name="verify" id="verify" class="input_box input_box02" />
+                <span><img id="verifyImg" src="__APP__/Index/verify" onClick="fleshVerify()" border="0" style="cursor:pointer" align="absmiddle"></span>
+            </li>
+            <li>
+                <label>&nbsp;</label><input type="submit" name="button" id="button" value="提交" class="submit" />
+                <label>&nbsp;</label><input type="reset" name="button2" id="button2" value="重置" class="reset" />
+            </li>
+        </ul>
+        </form>
+        </div>
+        
+          
+          </div>
+          <div class="main_right_main_bottom"><img src="__HOME__/images/n_bottom.jpg" width="710" height="11" /></div>
+        </div>
+    </div>
+      <div style="clear:both;"></div> 
+  </div>
+</div>
+<layout name="Inc:foot" cache="0" />
+</body>
+</html>

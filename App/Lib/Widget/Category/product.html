@@ -1,0 +1,23 @@
+
+<volist name="categoryList" id="vo">
+	<?php
+		$url = getCategoryUrl($vo);
+		$cList = selectSubCategory($vo['my_id']);
+		$subCount = count($cList);
+		if($subCount>0){
+			$url='#';
+		}
+	?>
+	<div><a href="{$url}" class="white_nav" style="cursor:pointer; "onclick="go_menu3('menu{$vo.id}_11510','{$vo.id}');">> {$vo.title}</a> </div>
+      <div style="clear:both; display:none;" id="menu{$vo.id}_11510"  class="nav_show">
+	  <?php foreach($cList as $key=>$val) { ?>
+        <ul style="margin:0; padding:0;">
+          <li style="background:none; height:25px; line-height:25px; padding:0; padding:0;">
+            <div style="padding:0 0 0 0">
+              <div align="center"><a href="<?php echo __APP__.'/'.MODULE_NAME.'/index/cid/'.$val['my_id'].'.html';?>" class="white_nav2" style="font-weight:normal;">> {$val.title}</a></div>
+            </div>
+          </li>
+        </ul>
+		<?php } ?>
+      </div>
+</volist>

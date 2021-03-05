@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<layout name="Inc:script" cache="0" />
+</head>
+
+<body>
+<div class="box">
+    <layout name="Inc:menu" cache="0" />
+  <div class="nav_b"><img src="__HOME__/images/index_03.jpg" width="1000" height="115" /></div>
+  <div class="main_s_det">
+<div class="main_left main_left_bg_03">
+        <div class="main_left_top"><img src="__HOME__/images/n_07.jpg" width="209" height="62" /></div>
+      <div class="page_left">
+  <div class="left_03">
+      <script language="JavaScript" type="text/javascript">
+function go_menu3(meun_name,id){
+     if($("#"+meun_name).css('display') == 'none')
+	 {
+		 $("#"+meun_name).show();
+		 var d = $('.nav_show');
+		 var i;
+		 for(i=0;i<d.length;i++)
+		 {
+		     if(i != id)
+			 {
+			    $('#menu'+i+'_11510').hide();
+			 }
+		 }
+		 
+	 }
+	 else
+	 {
+		 $("#"+meun_name).hide();
+	 }	 
+}
+/*function go_menu3(meun_name){
+
+    if (document.getElementById(meun_name).style.display == "none"){
+       document.getElementById(meun_name).style.display = "block";
+    }else{
+       document.getElementById(meun_name).style.display = "none";
+   } 
+}
+*/ 
+</script>
+{:Y('Category',array('style'=>'product'))}
+
+
+
+            <div></div>
+    </div>
+    <div class="left_04">
+  </div>
+      </div>
+     <layout name="Inc:leftadd" cache="0" />
+
+</div>
+{:Y('List',array('style'=>'product','model'=>'Goods','rowpage'=>12))} 
+  </div>
+</div>
+<layout name="Inc:foot" cache="0" />
+</body>
+</html>

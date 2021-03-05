@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>友情连接编辑</title>
+
+<layout name="Inc:edit_page" cache="0" />
+
+</head>
+<body>
+<div class="nav-site">{~getNavSite($c_root,$_GET['cid'])} > 编辑信息</div>
+<form action="__APP__/Admin/Link/<?php echo $obj==null?'add':'update'; ?>" method="post" enctype="multipart/form-data" class="form">  
+<input type="hidden" name="id" value="{$obj.id}">
+<input type="hidden" name="mid" value="{$_GET['mid']}"> 
+   <fieldset>
+       <ul class="align-list">
+           <li>
+               <label>链接名称</label>
+               <input type="text" id="title" name="title" value="{$obj.title}" class="type-text">
+           </li>
+            <li>
+               <label>网址URL</label>
+               <input type="text" id="url" name="url" value="<?php echo !empty($obj['url'])?$obj['url']:'http://'; ?>{$obj.url}" class="type-text">
+           </li>
+		   <li>
+               <label>LOGO图片</label>
+               <?php if( !empty($obj['image']) ) { ?>
+               <span id="span_image">
+			   <img alt="" align="middle" height="80" vspace="5" src="<?php echo __PUBLIC__.'/data/upload/images/link/s_'.$obj['image']; ?>">
+           	   <a href="javascript:void(0)" id="delete_image" style="color:red;text-decoration:underline;">删除封面</a>&nbsp;&nbsp;&nbsp;&nbsp;
+           	   </span>
+           	   <?php } ?>
+			    <input type="file" name="image">
+			    宽：<input name="imgwidth" value="300" style="width:50px;">&nbsp;&nbsp;
+			    高：<input name="imgheight" value="300" style="width:50px;"> <span style="color:#999;">(列表显示尺寸)</span>
+           </li>
+           
+            
+           
+           <li><label>链接分类</label>
+           	<select name="one_category_id">
+           	<option value="">请选择</option>
+           	<php> $category = getAdverCatelist($_GET['mid']); </php>
+           	<volist name="category" id="vo">
+           	<option value="{$vo.id}" <php> if($vo['id']==$obj['category_id']){ echo 'selected'; }elseif($vo['id']==$_GET['cid']){ echo 'selected'; } </php> >{$vo.title} </option>
+           	</volist>
+           	</select>
+           	
+           </li>
+           
+           <li>
+               <label>现在发布<a href="#" class="issue" title="在网站前台显示">?</a></label>
+               <input type="checkbox" id="is_publish" name="is_publish" value="1">
+           </li>
+           <li>
+               <label></label>
+               <input type="submit" value="确定并保存" name="save" class="button button-green" />
+               <input type="reset" value="重置" class="button button-red" />
+               <input type="button" value="返回列表" onclick="javascript:history.go(-1);" class="button" />
+            </li>
+        </ul>
+    </fieldset>
+</form>
+
+</body>
+</html>

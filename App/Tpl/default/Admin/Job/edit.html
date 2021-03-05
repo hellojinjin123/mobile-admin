@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>编辑内容</title>
+
+<link rel="stylesheet" type="text/css" href="__ADMIN__/Public/css/base.css" />
+<script src="__ADMIN__/Public/js/jquery-1.7.1.min.js"></script>
+<script src="__ADMIN__/Public/js/97Date/WdatePicker.js"></script>
+<script>UEDITOR_HOME_URL='__PUBLIC__/ueditor/';</script>
+<script type="text/javascript" src="__PUBLIC__/ueditor/editor_config.js"></script>
+<script type="text/javascript" src="__PUBLIC__/ueditor/editor_all_min.js"></script>
+<link rel="stylesheet" href="__PUBLIC__/ueditor/themes/default/ueditor.css"/>
+
+<script>
+function Data(){
+	this._APP_ = "__APP__";
+	this.c_root = "<?php echo $c_root;?>";
+	this.category_id = "<?php echo $obj['category_id'];?>";
+	this.get_cid = "<?php echo $_GET['cid'];?>";
+	this.get_id = "<?php echo $_GET['id'];?>";
+	this.is_comment = "<?php echo $obj['is_comment'];?>";
+	this.is_publish = "<?php echo $obj['is_publish'];?>";
+	this.actionName = "<?php echo $actionName;?>";
+}
+
+$(function(){
+	$('#position_id').val("<?php echo $obj['position_id']; ?>");
+});
+
+//语言选择回调方法
+function langCallBackFunction(lang) {
+	//职位下拉改变
+	$.getJSON("__APP__/Admin/Index/selectCategoryByPid",{"pid":"<?php echo getCategoryIdByAlias('Job/index'); ?>","lang":lang},function(json){
+		$('#position_id').html('');
+		$('#position_id').append('<option value="-1" selected>请选择</option>');
+		$(json.list).each(function(i,obj){
+			var str_tr = '<option value="'+obj.id+'">'+obj.title+'</option>';
+			$('#position_id').append(str_tr);
+		});
+	});
+}
+
+//langCallBackFunction("<?php echo $_GET['lang'];?>");
+</script>
+<script src="__ADMIN__/Public/js/edit.js"></script>
+
+</head>
+<body>
+<div class="nav-site">{~getNavSite($c_root,$_GET['cid'])} > 编辑信息</div>
+<form action="__APP__/Admin/<?php echo $actionName;?>/<?php echo $obj==null?'add':'update'; ?>" method="post" enctype="multipart/form-data" class="form">  
+<input type="hidden" name="id" value="{$obj.id}">
+<input type="hidden" name="mid" value="{$_GET['mid']}">
+   <fieldset>
+       <ul class="align-list">
+       		
+           <li>
+               <label>标题</label>
+               <input type="text" id="title" name="title" value="{$obj.title}" class="type-text">
+           </li>
+           <li>
+               <label>职位描述</label>
+               <div name="content" id="content" style="margin-left:200px;margin-left: 140px;margin-top: -25px;margin-bottom: 10px;"></div>
+               <script type="text/javascript">
+				    var editor = new baidu.editor.ui.Editor();
+				    editor.render("content");
+				    editor.setContent('{$obj.content|htmlspecialchars_decode}');
+				</script>
+				
+           </li>
+           <li>
+           	 <label>部门</label>
+             <input type="text" id="department" name="department" value="{$obj.department}" class="type-text">
+           </li>
+           <li>
+           	 <label>学历</label>
+             <input type="text" id="education" name="education" value="{$obj.education}" class="type-text">
+           </li>
+           <li>
+           	 <label>薪水</label>
+             <input type="text" id="salary" name="salary" value="{$obj.salary}" class="type-text">
+           </li>
+           <li>
+               <label>工作地点</label>
+               <textarea id="site" name="site" cols="100" rows="3">{$obj.site}</textarea>
+           </li>
+           <li>
+               <label>招聘人数</label>
+               <input type="text" id="number" name="number" value="{$obj.number}" class="type-text">
+           </li>
+           <li>
+               <label>职位要求</label>
+               <input type="text" id="ask" name="ask" value="{$obj.ask}" class="type-text">
+           </li>
+           <li>
+               <label>发布日期</label>
+               <input type="text" id="begin_time" name="begin_time" onClick="WdatePicker()" value="<?php echo (!isset($obj['begin_time'])) ? date('Y-m-d') : date('Y-m-d', $obj['begin_time']);?>" class="type-text">
+           </li>
+           <li>
+               <label>截止日期</label>
+               <input type="text" id="end_time" name="end_time" onClick="WdatePicker()" value="<?php echo (!isset($obj['end_time'])) ? date('Y-m-d') : date('Y-m-d', $obj['end_time']);?>" class="type-text">
+           </li>
+           <li>
+               <label>发布时间</label>
+               <input type="text" id="create_time" name="create_time" onClick="WdatePicker()" value="<?php echo (!isset($obj['create_time'])) ? date('Y-m-d') : date('Y-m-d', $obj['create_time']);?>" class="type-text">
+           </li>
+           <li>
+               <label>职位分类</label>
+               <select name="one_category_id">
+	           	<option value="">请选择</option>
+	           	<php> $category = getAdverCatelist($_GET['mid']); </php>
+	           	<volist name="category" id="vo">
+	           	<option value="{$vo.id}" <php> if($vo['id']==$obj['category_id']){ echo 'selected'; }elseif($vo['id']==$_GET['cid']){ echo 'selected'; } </php> >{$vo.title} </option>
+	           	</volist>
+	           	</select>
+           </li>
+           <li>
+               <label>现在发布<a href="#" class="issue" title="在网站前台显示">?</a></label>
+               <input type="checkbox" id="is_publish" name="is_publish" value="1" checked="checked">
+           </li>
+           <li>
+               <label></label>
+               <input type="submit" value="确定并保存" class="button button-green" />
+               <input type="reset" value="重置" class="button button-red" />
+            </li>
+        </ul>
+    </fieldset>
+</form>
+
+</body>
+</html>

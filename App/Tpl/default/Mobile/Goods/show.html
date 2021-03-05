@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$obj.title}_产品详情</title>
+<layout name="Inc:top" cache="0" />
+</head>
+
+<body>
+<div data-role="page" id="wrapper" class="jqm-demos">
+<div data-role="header" id="tit">
+	<a href="__APP__/Mobile/Goods/view/cid/{$_GET['cid']}" data-icon="back" class="tit_btn" rel="external">返回</a>
+	<h1>产品详情</h1>
+	<a href="__APP__/Mobile" data-icon="home" class="tit_btn" rel="external">首页</a>
+</div>
+
+<div data-role="content" style="background:#fff; border:none;" >
+  <div class="pro_data">
+    <h3>{$obj.title}</h3>
+    <if condition="$obj.image neq '' "><div><img src="__UPLOAD__/images/product/m_{$obj.image}" width="100%" height="100%"></div></if>
+    {$obj.content|htmlspecialchars_decode}
+    
+  </div>
+
+ </div>
+
+<layout name="Inc:footer" cache="0" />
+
+
+
+</div><!--page-->
+</body>
+</html>

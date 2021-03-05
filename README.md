@@ -24,4 +24,9 @@
 
 # 数据库
 
-联系我获取
+联系我获取496528759@qq.com
+
+# 项目效果图
+
+![avatar](https://github.com/hellojinjin123/mobile-admin/blob/main/Public/show/haojjmobile.gif)
+![avatar](https://github.com/hellojinjin123/mobile-admin/blob/main/Public/show/haojjpc.gif)
